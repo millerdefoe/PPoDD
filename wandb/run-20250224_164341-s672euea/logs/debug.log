@@ -1,0 +1,27 @@
+2025-02-24 16:43:41,639 INFO    MainThread:2074724 [wandb_setup.py:_flush():68] Configure stats pid to 2074724
+2025-02-24 16:43:41,640 INFO    MainThread:2074724 [wandb_setup.py:_flush():68] Loading settings from /home/FYP/spyridon001/.config/wandb/settings
+2025-02-24 16:43:41,640 INFO    MainThread:2074724 [wandb_setup.py:_flush():68] Loading settings from /home/FYP/spyridon001/PoDD_Modified/wandb/settings
+2025-02-24 16:43:41,640 INFO    MainThread:2074724 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'api_key': '***REDACTED***', '_require_service': 'True'}
+2025-02-24 16:43:41,640 INFO    MainThread:2074724 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'main.py', 'program': '/home/FYP/spyridon001/PoDD_Modified/main.py'}
+2025-02-24 16:43:41,640 INFO    MainThread:2074724 [wandb_init.py:_log_setup():492] Logging user logs to /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_164341-s672euea/logs/debug.log
+2025-02-24 16:43:41,640 INFO    MainThread:2074724 [wandb_init.py:_log_setup():493] Logging internal logs to /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_164341-s672euea/logs/debug-internal.log
+2025-02-24 16:43:41,640 INFO    MainThread:2074724 [wandb_init.py:init():532] calling init triggers
+2025-02-24 16:43:41,640 INFO    MainThread:2074724 [wandb_init.py:init():538] wandb.init called with sweep_config: {}
+config: {'seed': 0, 'rank': 0, 'workers': 0, 'root': './dataset', 'dataset': 'cifar10', 'arch': 'convnet', 'lr': 0.001, 'inner_optim': 'Adam', 'outer_optim': 'Adam', 'decay': False, 'inner_lr': 0.001, 'label_lr_scale': 1, 'distill_batch_size': 96, 'window': 60, 'minwindow': 0, 'totwindow': 200, 'num_train_eval': 8, 'train_y': False, 'train_lr': False, 'batch_size': 5000, 'eps': 1e-08, 'wd': 0, 'test_freq': 10, 'print_freq': 10, 'start_epoch': 0, 'epochs': 150, 'ddtype': 'curriculum', 'cctype': 2, 'zca': True, 'wandb': True, 'clip_coef': 0.9, 'name': 'PoDD-CIFAR10-MultiStage', 'comp_aug': False, 'comp_aug_real': False, 'syn_strategy': 'flip_rotate', 'real_strategy': 'flip_rotate', 'steps_per_epoch': 10, 'update_steps': 1, 'batch_update_steps': 1, 'comp_ipc': 1, 'class_area_width': 32, 'class_area_height': 32, 'load_poster_run_name': '', 'poster_class_num_x': 5, 'poster_class_num_y': 2, 'poster_width': 153, 'poster_height': 60, 'patch_num_x': 16, 'patch_num_y': 6, 'num_stages': 3, 'data_root': './dataset/cifar10', 'num_classes': 10, 'class_order': array([[0, 8, 5, 7, 4],
+       [1, 9, 3, 2, 6]])}
+2025-02-24 16:43:41,640 INFO    MainThread:2074724 [wandb_init.py:init():588] starting backend
+2025-02-24 16:43:41,640 INFO    MainThread:2074724 [wandb_init.py:init():592] setting up manager
+2025-02-24 16:43:41,641 INFO    MainThread:2074724 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-02-24 16:43:41,646 INFO    MainThread:2074724 [wandb_init.py:init():599] backend started and connected
+2025-02-24 16:43:41,650 INFO    MainThread:2074724 [wandb_init.py:init():687] updated telemetry
+2025-02-24 16:43:41,722 INFO    MainThread:2074724 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2025-02-24 16:43:42,291 INFO    MainThread:2074724 [wandb_run.py:_on_init():2134] communicating current version
+2025-02-24 16:43:42,339 INFO    MainThread:2074724 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.19.7 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2025-02-24 16:43:42,340 INFO    MainThread:2074724 [wandb_init.py:init():775] starting run threads in backend
+2025-02-24 16:43:45,088 INFO    MainThread:2074724 [wandb_run.py:_console_start():2114] atexit reg
+2025-02-24 16:43:45,088 INFO    MainThread:2074724 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2025-02-24 16:43:45,088 INFO    MainThread:2074724 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2025-02-24 16:43:45,088 INFO    MainThread:2074724 [wandb_run.py:_redirect():2059] Redirects installed.
+2025-02-24 16:43:45,089 INFO    MainThread:2074724 [wandb_init.py:init():817] run started, returning control to user process
+2025-02-24 16:55:47,140 WARNING MsgRouterThr:2074724 [router.py:message_loop():77] message_loop has been closed

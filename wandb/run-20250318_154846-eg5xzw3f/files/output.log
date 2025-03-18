@@ -1,0 +1,26 @@
+Starting PoDD Stage 1/5
+Check the length of the training dataset 50000
+GPU_0_using curriculum 98 with window 60
+  0%|          | 0/10 [00:06<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/FYP/spyridon001/PoDD_Modified/main.py", line 67, in <module>
+    main_worker(args)
+  File "/home/FYP/spyridon001/PoDD_Modified/src/base.py", line 223, in main_worker
+    grad_tmp, losses_avg, distill_steps = train(train_loader1, None, model, criterion,
+  File "/home/FYP/spyridon001/PoDD_Modified/src/base.py", line 378, in train
+    output, _ = model(inputs)
+  File "/home/FYP/spyridon001/.conda/envs/podd_modified/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/FYP/spyridon001/.conda/envs/podd_modified/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 169, in forward
+    return self.module(*inputs[0], **kwargs[0])
+  File "/home/FYP/spyridon001/.conda/envs/podd_modified/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/FYP/spyridon001/PoDD_Modified/src/PoDD.py", line 114, in forward
+    loss = self.criterion(out, label)
+  File "/home/FYP/spyridon001/.conda/envs/podd_modified/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/FYP/spyridon001/.conda/envs/podd_modified/lib/python3.9/site-packages/torch/nn/modules/loss.py", line 1174, in forward
+    return F.cross_entropy(input, target, weight=self.weight,
+  File "/home/FYP/spyridon001/.conda/envs/podd_modified/lib/python3.9/site-packages/torch/nn/functional.py", line 3026, in cross_entropy
+    return torch._C._nn.cross_entropy_loss(input, target, weight, _Reduction.get_enum(reduction), ignore_index, label_smoothing)
+RuntimeError: Expected all tensors to be on the same device, but found at least two devices, cuda:0 and cpu!

@@ -1,0 +1,34 @@
+  0%|          | 0/10 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/FYP/spyridon001/PoDD_Modified/main.py", line 67, in <module>
+    main_worker(args)
+  File "/home/FYP/spyridon001/PoDD_Modified/src/base.py", line 218, in main_worker
+    grad_tmp, losses_avg, distill_steps = train(train_loader1, None, model, criterion,
+  File "/home/FYP/spyridon001/PoDD_Modified/src/base.py", line 365, in train
+    output, _ = model(inputs)
+  File "/home/FYP/spyridon001/.conda/envs/podd_modified/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/FYP/spyridon001/.conda/envs/podd_modified/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 169, in forward
+    return self.module(*inputs[0], **kwargs[0])
+  File "/home/FYP/spyridon001/.conda/envs/podd_modified/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/FYP/spyridon001/PoDD_Modified/src/PoDD.py", line 142, in forward
+    imgs = self.syn_intervention(imgs, dtype='syn')
+  File "/home/FYP/spyridon001/PoDD_Modified/src/data_utils.py", line 365, in __call__
+    return self.do(x)
+  File "/home/FYP/spyridon001/PoDD_Modified/src/data_utils.py", line 389, in do
+    x = function(x)
+  File "/home/FYP/spyridon001/PoDD_Modified/src/data_utils.py", line 436, in diff_rotate
+    grid = F.affine_grid(theta, x.shape, align_corners=False).to(x.device)
+  File "/home/FYP/spyridon001/.conda/envs/podd_modified/lib/python3.9/site-packages/torch/nn/functional.py", line 4310, in affine_grid
+    raise ValueError(
+ValueError: Expected a batch of 3D affine matrices of shape Nx3x4 for size torch.Size([1, 1, 3, 32, 32]). Got torch.Size([1, 2, 3]).
+Check the length of the training dataset 50000
+GPU_0_using curriculum 98 with window 60
+🔍 Debugging Index Mapping:
+Total dataset samples: 1
+Dataset Sizes per Stage: [1]
+Dataset Offsets: [0]
+Global Indices Sampled: [0]
+Mapped Stage Indices: [0]
+Mapped Local Indices: [0]

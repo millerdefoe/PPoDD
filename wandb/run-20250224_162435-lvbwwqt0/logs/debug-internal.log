@@ -1,0 +1,681 @@
+2025-02-24 16:24:35,868 INFO    StreamThr :19311 [internal.py:wandb_internal():87] W&B internal server running at pid: 19311, started at: 2025-02-24 16:24:35.866660
+2025-02-24 16:24:35,869 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status
+2025-02-24 16:24:35,875 INFO    WriterThread:19311 [datastore.py:open_for_write():85] open: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/run-lvbwwqt0.wandb
+2025-02-24 16:24:35,878 DEBUG   SenderThread:19311 [sender.py:send():336] send: header
+2025-02-24 16:24:35,947 DEBUG   SenderThread:19311 [sender.py:send():336] send: run
+2025-02-24 16:24:36,535 INFO    SenderThread:19311 [dir_watcher.py:__init__():216] watching files in: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files
+2025-02-24 16:24:36,535 INFO    SenderThread:19311 [sender.py:_start_run_threads():1067] run started: lvbwwqt0 with start time 1740385475.871379
+2025-02-24 16:24:36,535 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: summary_record
+2025-02-24 16:24:36,538 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: check_version
+2025-02-24 16:24:36,539 INFO    SenderThread:19311 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2025-02-24 16:24:36,540 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: check_version
+2025-02-24 16:24:36,593 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: run_start
+2025-02-24 16:24:36,601 DEBUG   HandlerThread:19311 [system_info.py:__init__():31] System info init
+2025-02-24 16:24:36,602 DEBUG   HandlerThread:19311 [system_info.py:__init__():46] System info init done
+2025-02-24 16:24:36,602 INFO    HandlerThread:19311 [system_monitor.py:start():151] Starting system monitor
+2025-02-24 16:24:36,602 INFO    SystemMonitor:19311 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2025-02-24 16:24:36,602 INFO    HandlerThread:19311 [system_monitor.py:probe():172] Collecting system info
+2025-02-24 16:24:36,602 INFO    SystemMonitor:19311 [interfaces.py:start():168] Started cpu
+2025-02-24 16:24:36,604 INFO    SystemMonitor:19311 [interfaces.py:start():168] Started disk
+2025-02-24 16:24:36,604 INFO    SystemMonitor:19311 [interfaces.py:start():168] Started gpu
+2025-02-24 16:24:36,605 INFO    SystemMonitor:19311 [interfaces.py:start():168] Started memory
+2025-02-24 16:24:36,605 INFO    SystemMonitor:19311 [interfaces.py:start():168] Started network
+2025-02-24 16:24:36,615 DEBUG   HandlerThread:19311 [system_info.py:probe():195] Probing system
+2025-02-24 16:24:36,622 DEBUG   HandlerThread:19311 [system_info.py:_probe_git():180] Probing git
+2025-02-24 16:24:36,643 DEBUG   HandlerThread:19311 [system_info.py:_probe_git():188] Probing git done
+2025-02-24 16:24:36,643 DEBUG   HandlerThread:19311 [system_info.py:probe():241] Probing system done
+2025-02-24 16:24:36,643 DEBUG   HandlerThread:19311 [system_monitor.py:probe():181] {'os': 'Linux-5.14.0-503.15.1.el9_5.x86_64-x86_64-with-glibc2.34', 'python': '3.9.16', 'heartbeatAt': '2025-02-24T08:24:36.615983', 'startedAt': '2025-02-24T08:24:35.812879', 'docker': None, 'cuda': None, 'args': ('--name=PoDD-CIFAR10-MultiStage', '--distill_batch_size=96', '--patch_num_x=16', '--patch_num_y=6', '--dataset=cifar10', '--num_train_eval=8', '--update_steps=1', '--batch_size=5000', '--ddtype=curriculum', '--cctype=2', '--epoch=150', '--test_freq=10', '--print_freq=10', '--arch=convnet', '--window=60', '--minwindow=0', '--totwindow=200', '--inner_optim=Adam', '--outer_optim=Adam', '--inner_lr=0.001', '--lr=0.001', '--syn_strategy=flip_rotate', '--real_strategy=flip_rotate', '--seed=0', '--zca', '--comp_ipc=1', '--class_area_width=32', '--class_area_height=32', '--poster_width=153', '--poster_height=60', '--poster_class_num_x=5', '--poster_class_num_y=2'), 'state': 'running', 'program': '/home/FYP/spyridon001/PoDD_Modified/main.py', 'codePath': 'main.py', 'git': {'remote': 'https://github.com/AsafShul/PoDD.git', 'commit': '070ff4636095b93c5f384708bdbc7f562df0c228'}, 'email': None, 'root': '/home/FYP/spyridon001/PoDD_Modified', 'host': 'TC1N04', 'username': 'spyridon001', 'executable': '/home/FYP/spyridon001/.conda/envs/podd_modified/bin/python', 'cpu_count': 36, 'cpu_count_logical': 72, 'cpu_freq': {'current': 2763.923333333333, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 3597.391, 'min': 0.0, 'max': 0.0}, {'current': 3600.005, 'min': 0.0, 'max': 0.0}, {'current': 3600.003, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 3603.378, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 3600.024, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 3599.525, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 3580.938, 'min': 0.0, 'max': 0.0}, {'current': 3599.625, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2842.769, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 3600.03, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 3600.103, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 3899.99, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 877.6688995361328, 'used': 24.02646255493164}, 'gpu': 'Tesla V100-PCIE-32GB', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla V100-PCIE-32GB', 'memory_total': 34359738368}], 'memory': {'total': 377.53003692626953}}
+2025-02-24 16:24:36,643 INFO    HandlerThread:19311 [system_monitor.py:probe():182] Finished collecting system info
+2025-02-24 16:24:36,643 INFO    HandlerThread:19311 [system_monitor.py:probe():185] Publishing system info
+2025-02-24 16:24:36,643 DEBUG   HandlerThread:19311 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2025-02-24 16:24:36,647 DEBUG   HandlerThread:19311 [system_info.py:_save_pip():67] Saving pip packages done
+2025-02-24 16:24:36,648 DEBUG   HandlerThread:19311 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2025-02-24 16:24:37,538 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/requirements.txt
+2025-02-24 16:24:37,539 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/conda-environment.yaml
+2025-02-24 16:24:37,539 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/wandb-summary.json
+2025-02-24 16:24:39,395 DEBUG   HandlerThread:19311 [system_info.py:_save_conda():86] Saving conda packages done
+2025-02-24 16:24:39,400 INFO    HandlerThread:19311 [system_monitor.py:probe():187] Finished publishing system info
+2025-02-24 16:24:39,411 DEBUG   SenderThread:19311 [sender.py:send():336] send: files
+2025-02-24 16:24:39,411 INFO    SenderThread:19311 [sender.py:_save_file():1321] saving file wandb-metadata.json with policy now
+2025-02-24 16:24:39,419 DEBUG   SenderThread:19311 [sender.py:send():336] send: telemetry
+2025-02-24 16:24:39,420 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: stop_status
+2025-02-24 16:24:39,420 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: stop_status
+2025-02-24 16:24:39,541 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/conda-environment.yaml
+2025-02-24 16:24:39,541 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/wandb-metadata.json
+2025-02-24 16:24:40,232 INFO    wandb-upload_0:19311 [upload_job.py:push():138] Uploaded file /tmp/tmpajdjquikwandb/1922po3a-wandb-metadata.json
+2025-02-24 16:24:40,542 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:24:41,775 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:24:42,543 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:24:46,775 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:24:52,549 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:24:54,419 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:24:54,562 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:24:58,528 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:24:58,566 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:24:59,427 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:25:02,569 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:25:04,385 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:25:04,427 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:25:06,573 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:25:08,576 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:25:09,434 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:25:09,441 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:25:10,579 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:25:10,579 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/config.yaml
+2025-02-24 16:25:14,434 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:25:14,583 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:25:15,354 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:25:18,585 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:25:19,528 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:25:20,435 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:25:22,598 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:25:24,528 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:25:26,271 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:25:26,607 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:25:29,531 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:25:30,616 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:25:31,329 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:25:34,533 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:25:34,624 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:25:36,606 DEBUG   SystemMonitor:19311 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2025-02-24 16:25:36,607 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:25:36,608 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:25:38,627 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:25:39,533 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:25:42,108 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:25:42,631 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:25:44,534 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:25:46,635 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:25:47,981 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:25:49,542 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:25:50,640 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:25:53,961 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:25:54,543 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:25:54,660 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:25:58,664 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:25:59,549 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:25:59,885 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:26:02,668 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:26:04,589 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:26:05,689 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:26:06,610 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:26:06,672 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:26:09,591 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:26:10,678 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:26:10,818 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:26:12,685 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:26:14,591 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:26:14,691 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:26:15,901 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:26:18,699 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:26:19,592 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:26:20,709 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:26:21,545 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:26:22,712 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:26:24,593 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:26:24,714 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:26:26,717 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:26:27,415 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:26:29,593 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:26:30,722 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:26:32,726 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:26:32,804 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:26:34,595 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:26:34,728 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:26:36,611 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:26:38,612 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:26:38,732 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:26:39,598 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:26:40,734 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:26:44,489 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:26:44,599 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:26:44,739 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:26:48,742 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:26:49,624 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:26:49,957 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:26:50,745 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:26:54,627 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:26:54,750 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:26:55,147 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:26:58,755 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:26:59,674 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:27:00,756 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:27:00,780 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:27:04,679 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:27:04,760 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:27:06,338 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:27:06,612 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:27:06,764 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:27:09,684 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:27:11,534 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:27:12,770 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:27:14,693 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:27:16,775 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:27:16,916 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:27:19,696 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:27:20,780 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:27:22,255 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:27:24,701 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:27:24,784 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:27:27,828 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:27:28,790 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:27:29,733 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:27:32,794 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:27:33,072 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:27:34,734 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:27:36,614 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:27:36,798 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:27:38,615 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:27:39,807 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:27:42,808 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:27:43,808 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:27:44,811 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:27:46,813 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:27:48,856 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:27:49,858 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:27:50,817 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:27:54,172 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:27:54,821 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:27:54,859 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:27:58,831 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:27:59,336 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:27:59,860 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:28:02,839 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:28:04,482 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:28:04,860 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:28:06,618 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:28:08,844 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:28:09,619 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:28:09,862 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:28:12,849 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:28:14,863 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:28:15,399 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:28:16,854 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:28:19,863 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:28:20,543 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:28:20,858 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:28:24,863 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:28:24,870 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:28:25,710 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:28:28,869 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:28:29,897 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:28:30,992 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:28:32,872 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:28:34,897 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:28:36,160 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:28:36,625 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:28:36,883 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:28:39,933 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:28:40,887 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:28:41,934 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:28:44,891 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:28:44,934 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:28:47,706 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:28:48,895 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:28:49,936 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:28:52,899 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:28:53,542 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:28:54,936 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:28:56,903 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:28:59,161 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:28:59,937 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:29:00,907 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:29:04,911 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:29:04,992 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:29:04,992 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:29:06,626 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:29:08,914 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:29:09,992 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:29:10,011 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:29:12,919 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:29:14,928 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:29:14,993 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:29:15,315 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:29:18,931 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:29:19,994 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:29:21,246 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:29:22,950 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:29:25,002 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:29:26,816 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:29:26,954 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:29:28,956 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:29:30,003 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:29:32,788 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:29:32,960 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:29:35,003 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:29:36,627 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:29:36,964 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:29:37,823 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:29:40,013 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:29:40,968 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:29:42,971 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:29:43,494 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:29:45,102 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:29:46,974 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:29:49,155 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:29:50,178 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:29:50,978 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:29:54,213 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:29:54,981 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:29:55,217 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:29:58,985 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:29:59,324 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:30:00,233 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:30:02,989 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:30:04,599 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:30:05,233 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:30:06,633 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:30:08,996 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:30:09,634 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:30:10,240 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:30:13,002 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:30:15,216 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:30:15,242 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:30:17,015 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:30:20,244 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:30:20,533 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:30:21,018 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:30:25,025 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:30:25,246 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:30:25,842 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:30:29,030 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:30:30,247 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:30:31,492 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:30:33,047 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:30:35,247 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:30:36,634 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:30:36,635 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:30:37,055 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:30:39,058 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:30:40,248 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:30:42,323 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:30:43,061 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:30:45,322 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:30:47,065 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:30:47,983 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:30:50,325 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:30:51,068 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:30:53,251 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:30:55,075 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:30:55,326 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:30:59,079 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:30:59,087 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:31:00,326 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:31:03,088 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:31:04,772 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:31:05,097 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:31:05,327 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:31:06,636 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:31:10,093 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:31:10,333 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:31:11,104 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:31:13,106 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:31:15,343 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:31:15,455 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:31:19,117 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:31:20,453 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:31:21,120 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:31:21,196 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:31:25,453 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:31:26,725 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:31:27,129 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:31:29,132 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:31:30,454 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:31:31,134 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:31:32,457 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:31:35,462 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:31:36,637 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:31:37,638 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:31:40,473 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:31:42,638 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:31:45,474 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:31:47,154 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:31:47,872 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:31:49,156 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:31:50,475 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:31:53,426 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:31:55,163 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:31:55,475 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:31:57,168 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:31:59,227 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:32:00,476 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:32:01,171 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:32:03,173 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:32:04,701 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:32:05,175 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:32:05,585 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:32:06,638 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:32:09,912 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:32:10,656 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:32:11,182 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:32:13,183 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:32:15,635 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:32:15,657 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:32:20,635 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:32:20,657 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:32:25,637 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:32:25,658 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:32:29,206 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:32:30,788 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:32:31,209 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:32:31,391 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:32:35,789 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:32:36,471 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:32:36,640 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:32:37,216 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:32:39,218 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:32:40,789 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:32:41,810 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:32:45,223 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:32:46,009 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:32:47,225 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:32:47,336 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:32:51,010 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:32:52,397 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:32:53,230 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:32:55,232 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:32:56,118 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:32:57,234 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:32:58,091 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:33:01,124 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:33:03,092 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:33:06,131 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:33:06,642 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:33:08,643 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:33:11,140 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:33:11,246 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:33:13,249 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:33:13,935 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:33:16,146 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:33:19,002 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:33:19,254 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:33:21,147 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:33:21,258 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:33:23,261 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:33:24,339 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:33:26,151 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:33:27,264 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:33:29,267 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:33:29,877 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:33:31,157 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:33:35,007 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:33:35,274 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:33:36,160 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:33:36,643 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:33:37,277 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:33:39,279 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:33:40,692 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:33:41,161 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:33:45,695 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:33:46,164 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:33:50,695 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:33:51,165 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:33:53,299 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:33:55,300 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:33:56,168 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:33:56,551 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:33:57,302 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:34:01,179 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:34:02,548 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:34:03,307 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:34:05,309 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:34:06,184 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:34:06,644 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:34:07,645 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:34:09,312 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:34:11,186 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:34:11,319 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:34:13,321 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:34:13,389 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:34:16,187 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:34:18,838 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:34:19,327 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:34:21,192 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:34:21,328 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:34:24,287 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:34:26,195 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:34:29,287 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:34:31,199 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:34:35,275 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:34:36,200 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:34:36,646 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:34:37,351 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:34:39,354 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:34:40,968 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:34:41,200 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:34:45,359 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:34:46,201 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:34:46,392 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:34:47,363 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:34:51,206 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:34:51,539 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:34:53,368 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:34:55,370 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:34:56,206 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:34:56,875 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:35:01,207 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:35:01,375 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:35:02,816 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:35:03,377 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:35:06,212 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:35:06,647 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:35:08,651 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:35:11,212 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:35:13,654 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:35:16,215 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:35:19,238 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:35:19,402 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:35:21,314 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:35:21,405 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:35:24,683 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:35:26,315 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:35:27,409 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:35:29,411 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:35:30,017 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:35:31,315 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:35:35,069 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:35:35,417 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:35:36,427 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:35:36,648 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:35:37,419 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:35:40,652 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:35:41,431 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:35:43,426 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:35:45,428 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:35:46,351 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:35:46,438 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:35:47,431 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:35:51,352 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:35:51,438 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:35:56,353 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:35:56,442 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:36:01,439 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:36:01,543 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:36:01,782 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:36:03,443 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:36:06,597 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:36:06,649 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:36:07,650 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:36:09,448 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:36:11,456 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:36:11,601 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:36:13,457 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:36:13,464 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:36:16,763 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:36:17,462 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:36:18,856 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:36:19,464 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:36:21,766 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:36:23,854 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:36:25,470 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:36:26,962 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:36:27,476 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:36:29,479 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:36:29,787 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:36:31,968 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:36:34,790 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:36:36,650 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:36:36,969 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:36:40,654 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:36:41,977 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:36:43,492 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:36:45,408 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-24 16:36:45,410 DEBUG   SenderThread:19311 [sender.py:send():336] send: history
+2025-02-24 16:36:45,410 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: summary_record
+2025-02-24 16:36:45,416 INFO    SenderThread:19311 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2025-02-24 16:36:45,494 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:36:45,494 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/wandb-summary.json
+2025-02-24 16:36:46,235 DEBUG   SenderThread:19311 [sender.py:send():336] send: files
+2025-02-24 16:36:46,235 INFO    SenderThread:19311 [sender.py:_save_file():1321] saving file media/images/inverse_zca_poster_1_5cfc56dc29b6fe07d68b.png with policy now
+2025-02-24 16:36:46,236 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:36:46,244 DEBUG   SenderThread:19311 [sender.py:send():336] send: files
+2025-02-24 16:36:46,244 INFO    SenderThread:19311 [sender.py:_save_file():1321] saving file media/images/distilled_poster_1_5148aac10ef68f4c13fc.png with policy now
+2025-02-24 16:36:46,245 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: partial_history
+2025-02-24 16:36:46,245 DEBUG   SenderThread:19311 [sender.py:send():336] send: history
+2025-02-24 16:36:46,246 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: summary_record
+2025-02-24 16:36:46,254 INFO    SenderThread:19311 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2025-02-24 16:36:46,257 DEBUG   SenderThread:19311 [sender.py:send():336] send: exit
+2025-02-24 16:36:46,257 INFO    SenderThread:19311 [sender.py:send_exit():559] handling exit code: 1
+2025-02-24 16:36:46,257 INFO    SenderThread:19311 [sender.py:send_exit():561] handling runtime: 729
+2025-02-24 16:36:46,260 INFO    SenderThread:19311 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2025-02-24 16:36:46,260 INFO    SenderThread:19311 [sender.py:send_exit():567] send defer
+2025-02-24 16:36:46,260 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: defer
+2025-02-24 16:36:46,261 INFO    HandlerThread:19311 [handler.py:handle_request_defer():170] handle defer: 0
+2025-02-24 16:36:46,261 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: defer
+2025-02-24 16:36:46,261 INFO    SenderThread:19311 [sender.py:send_request_defer():583] handle sender defer: 0
+2025-02-24 16:36:46,261 INFO    SenderThread:19311 [sender.py:transition_state():587] send defer: 1
+2025-02-24 16:36:46,261 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: defer
+2025-02-24 16:36:46,261 INFO    HandlerThread:19311 [handler.py:handle_request_defer():170] handle defer: 1
+2025-02-24 16:36:46,261 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: defer
+2025-02-24 16:36:46,261 INFO    SenderThread:19311 [sender.py:send_request_defer():583] handle sender defer: 1
+2025-02-24 16:36:46,261 INFO    SenderThread:19311 [sender.py:transition_state():587] send defer: 2
+2025-02-24 16:36:46,261 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: defer
+2025-02-24 16:36:46,261 INFO    HandlerThread:19311 [handler.py:handle_request_defer():170] handle defer: 2
+2025-02-24 16:36:46,261 INFO    HandlerThread:19311 [system_monitor.py:finish():161] Stopping system monitor
+2025-02-24 16:36:46,270 DEBUG   SystemMonitor:19311 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2025-02-24 16:36:46,270 DEBUG   SystemMonitor:19311 [system_monitor.py:_start():141] Publishing last batch of metrics
+2025-02-24 16:36:46,271 INFO    HandlerThread:19311 [interfaces.py:finish():175] Joined cpu
+2025-02-24 16:36:46,271 INFO    HandlerThread:19311 [interfaces.py:finish():175] Joined disk
+2025-02-24 16:36:46,327 INFO    HandlerThread:19311 [interfaces.py:finish():175] Joined gpu
+2025-02-24 16:36:46,327 INFO    HandlerThread:19311 [interfaces.py:finish():175] Joined memory
+2025-02-24 16:36:46,327 INFO    HandlerThread:19311 [interfaces.py:finish():175] Joined network
+2025-02-24 16:36:46,327 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: defer
+2025-02-24 16:36:46,327 INFO    SenderThread:19311 [sender.py:send_request_defer():583] handle sender defer: 2
+2025-02-24 16:36:46,327 INFO    SenderThread:19311 [sender.py:transition_state():587] send defer: 3
+2025-02-24 16:36:46,327 DEBUG   SenderThread:19311 [sender.py:send():336] send: stats
+2025-02-24 16:36:46,327 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: defer
+2025-02-24 16:36:46,327 INFO    HandlerThread:19311 [handler.py:handle_request_defer():170] handle defer: 3
+2025-02-24 16:36:46,328 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: defer
+2025-02-24 16:36:46,328 INFO    SenderThread:19311 [sender.py:send_request_defer():583] handle sender defer: 3
+2025-02-24 16:36:46,328 INFO    SenderThread:19311 [sender.py:transition_state():587] send defer: 4
+2025-02-24 16:36:46,328 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: defer
+2025-02-24 16:36:46,328 INFO    HandlerThread:19311 [handler.py:handle_request_defer():170] handle defer: 4
+2025-02-24 16:36:46,328 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: defer
+2025-02-24 16:36:46,328 INFO    SenderThread:19311 [sender.py:send_request_defer():583] handle sender defer: 4
+2025-02-24 16:36:46,328 INFO    SenderThread:19311 [sender.py:transition_state():587] send defer: 5
+2025-02-24 16:36:46,328 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: defer
+2025-02-24 16:36:46,328 INFO    HandlerThread:19311 [handler.py:handle_request_defer():170] handle defer: 5
+2025-02-24 16:36:46,328 DEBUG   SenderThread:19311 [sender.py:send():336] send: summary
+2025-02-24 16:36:46,331 INFO    SenderThread:19311 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2025-02-24 16:36:46,332 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: defer
+2025-02-24 16:36:46,332 INFO    SenderThread:19311 [sender.py:send_request_defer():583] handle sender defer: 5
+2025-02-24 16:36:46,332 INFO    SenderThread:19311 [sender.py:transition_state():587] send defer: 6
+2025-02-24 16:36:46,332 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: defer
+2025-02-24 16:36:46,332 INFO    HandlerThread:19311 [handler.py:handle_request_defer():170] handle defer: 6
+2025-02-24 16:36:46,332 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: defer
+2025-02-24 16:36:46,332 INFO    SenderThread:19311 [sender.py:send_request_defer():583] handle sender defer: 6
+2025-02-24 16:36:46,332 INFO    SenderThread:19311 [sender.py:transition_state():587] send defer: 7
+2025-02-24 16:36:46,332 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:36:46,332 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: defer
+2025-02-24 16:36:46,332 INFO    HandlerThread:19311 [handler.py:handle_request_defer():170] handle defer: 7
+2025-02-24 16:36:46,332 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: defer
+2025-02-24 16:36:46,333 INFO    SenderThread:19311 [sender.py:send_request_defer():583] handle sender defer: 7
+2025-02-24 16:36:46,499 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/wandb-summary.json
+2025-02-24 16:36:46,499 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/media/images/distilled_poster_1_5148aac10ef68f4c13fc.png
+2025-02-24 16:36:46,499 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/media/images/inverse_zca_poster_1_5cfc56dc29b6fe07d68b.png
+2025-02-24 16:36:46,499 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/media
+2025-02-24 16:36:46,499 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/media/images
+2025-02-24 16:36:46,922 INFO    wandb-upload_0:19311 [upload_job.py:push():138] Uploaded file /tmp/tmpajdjquikwandb/5kl8e9wa-media/images/inverse_zca_poster_1_5cfc56dc29b6fe07d68b.png
+2025-02-24 16:36:46,963 INFO    wandb-upload_1:19311 [upload_job.py:push():138] Uploaded file /tmp/tmpajdjquikwandb/ro6wk9wy-media/images/distilled_poster_1_5148aac10ef68f4c13fc.png
+2025-02-24 16:36:47,257 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: poll_exit
+2025-02-24 16:36:47,501 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:36:47,502 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/media/images
+2025-02-24 16:36:47,659 INFO    wandb-upload_0:19311 [upload_job.py:push():138] Uploaded file /tmp/tmpajdjquikwandb/3926l3hd-media/images/inverse_zca_poster_1_5cfc56dc29b6fe07d68b.png
+2025-02-24 16:36:48,383 INFO    wandb-upload_1:19311 [upload_job.py:push():138] Uploaded file /tmp/tmpajdjquikwandb/d75qqchv-media/images/distilled_poster_1_5148aac10ef68f4c13fc.png
+2025-02-24 16:36:48,606 INFO    SenderThread:19311 [sender.py:transition_state():587] send defer: 8
+2025-02-24 16:36:48,606 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: poll_exit
+2025-02-24 16:36:48,607 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: defer
+2025-02-24 16:36:48,607 INFO    HandlerThread:19311 [handler.py:handle_request_defer():170] handle defer: 8
+2025-02-24 16:36:48,607 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: defer
+2025-02-24 16:36:48,607 INFO    SenderThread:19311 [sender.py:send_request_defer():583] handle sender defer: 8
+2025-02-24 16:36:48,633 INFO    SenderThread:19311 [sender.py:transition_state():587] send defer: 9
+2025-02-24 16:36:48,633 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: defer
+2025-02-24 16:36:48,633 DEBUG   SenderThread:19311 [sender.py:send():336] send: artifact
+2025-02-24 16:36:48,633 INFO    HandlerThread:19311 [handler.py:handle_request_defer():170] handle defer: 9
+2025-02-24 16:36:49,504 INFO    Thread-13 :19311 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:36:51,646 INFO    wandb-upload_0:19311 [upload_job.py:push():96] Uploaded file /home/FYP/spyridon001/.local/share/wandb/artifacts/staging/tmp17y4agmb
+2025-02-24 16:36:51,654 INFO    wandb-upload_1:19311 [upload_job.py:push():96] Uploaded file /home/FYP/spyridon001/.local/share/wandb/artifacts/staging/tmp1n8e5oc7
+2025-02-24 16:36:52,258 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: keepalive
+2025-02-24 16:36:53,197 INFO    SenderThread:19311 [sender.py:send_artifact():1417] sent artifact job-https___github.com_AsafShul_PoDD.git_main.py - {'id': 'QXJ0aWZhY3Q6MTUyNDkxNjE0Mw==', 'digest': '963c1f49e81694b617231aa775800b5a', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU1MTcyMzQwMg==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTQ3MjU2NTg4NA==', 'versionIndex': 0}}, 'version': 'latest'}
+2025-02-24 16:36:53,197 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: defer
+2025-02-24 16:36:53,197 INFO    SenderThread:19311 [sender.py:send_request_defer():583] handle sender defer: 9
+2025-02-24 16:36:53,197 INFO    SenderThread:19311 [dir_watcher.py:finish():362] shutting down directory watcher
+2025-02-24 16:36:53,197 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: status_report
+2025-02-24 16:36:53,507 INFO    SenderThread:19311 [dir_watcher.py:finish():392] scan: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files
+2025-02-24 16:36:53,507 INFO    SenderThread:19311 [dir_watcher.py:finish():406] scan save: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/conda-environment.yaml conda-environment.yaml
+2025-02-24 16:36:53,507 INFO    SenderThread:19311 [dir_watcher.py:finish():406] scan save: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/config.yaml config.yaml
+2025-02-24 16:36:53,507 INFO    SenderThread:19311 [dir_watcher.py:finish():406] scan save: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log output.log
+2025-02-24 16:36:53,512 INFO    SenderThread:19311 [dir_watcher.py:finish():406] scan save: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/requirements.txt requirements.txt
+2025-02-24 16:36:53,514 INFO    SenderThread:19311 [dir_watcher.py:finish():406] scan save: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/wandb-metadata.json wandb-metadata.json
+2025-02-24 16:36:53,514 INFO    SenderThread:19311 [dir_watcher.py:finish():406] scan save: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/wandb-summary.json wandb-summary.json
+2025-02-24 16:36:53,524 INFO    SenderThread:19311 [dir_watcher.py:finish():406] scan save: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/media/images/distilled_poster_1_5148aac10ef68f4c13fc.png media/images/distilled_poster_1_5148aac10ef68f4c13fc.png
+2025-02-24 16:36:53,524 INFO    SenderThread:19311 [dir_watcher.py:finish():406] scan save: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/media/images/inverse_zca_poster_1_5cfc56dc29b6fe07d68b.png media/images/inverse_zca_poster_1_5cfc56dc29b6fe07d68b.png
+2025-02-24 16:36:53,524 INFO    SenderThread:19311 [sender.py:transition_state():587] send defer: 10
+2025-02-24 16:36:53,524 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: defer
+2025-02-24 16:36:53,524 INFO    HandlerThread:19311 [handler.py:handle_request_defer():170] handle defer: 10
+2025-02-24 16:36:53,524 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: defer
+2025-02-24 16:36:53,524 INFO    SenderThread:19311 [sender.py:send_request_defer():583] handle sender defer: 10
+2025-02-24 16:36:53,524 INFO    SenderThread:19311 [file_pusher.py:finish():162] shutting down file pusher
+2025-02-24 16:36:54,122 INFO    wandb-upload_3:19311 [upload_job.py:push():138] Uploaded file /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/requirements.txt
+2025-02-24 16:36:54,127 INFO    wandb-upload_4:19311 [upload_job.py:push():138] Uploaded file /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/wandb-summary.json
+2025-02-24 16:36:54,219 INFO    wandb-upload_1:19311 [upload_job.py:push():138] Uploaded file /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/config.yaml
+2025-02-24 16:36:54,223 INFO    wandb-upload_0:19311 [upload_job.py:push():138] Uploaded file /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/conda-environment.yaml
+2025-02-24 16:36:54,226 INFO    wandb-upload_2:19311 [upload_job.py:push():138] Uploaded file /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/files/output.log
+2025-02-24 16:36:54,426 INFO    Thread-12 :19311 [sender.py:transition_state():587] send defer: 11
+2025-02-24 16:36:54,426 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: defer
+2025-02-24 16:36:54,426 INFO    HandlerThread:19311 [handler.py:handle_request_defer():170] handle defer: 11
+2025-02-24 16:36:54,427 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: defer
+2025-02-24 16:36:54,427 INFO    SenderThread:19311 [sender.py:send_request_defer():583] handle sender defer: 11
+2025-02-24 16:36:54,427 INFO    SenderThread:19311 [file_pusher.py:join():167] waiting for file pusher
+2025-02-24 16:36:54,427 INFO    SenderThread:19311 [sender.py:transition_state():587] send defer: 12
+2025-02-24 16:36:54,427 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: defer
+2025-02-24 16:36:54,427 INFO    HandlerThread:19311 [handler.py:handle_request_defer():170] handle defer: 12
+2025-02-24 16:36:54,427 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: defer
+2025-02-24 16:36:54,427 INFO    SenderThread:19311 [sender.py:send_request_defer():583] handle sender defer: 12
+2025-02-24 16:36:55,237 INFO    SenderThread:19311 [sender.py:transition_state():587] send defer: 13
+2025-02-24 16:36:55,237 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: defer
+2025-02-24 16:36:55,237 INFO    HandlerThread:19311 [handler.py:handle_request_defer():170] handle defer: 13
+2025-02-24 16:36:55,237 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: defer
+2025-02-24 16:36:55,237 INFO    SenderThread:19311 [sender.py:send_request_defer():583] handle sender defer: 13
+2025-02-24 16:36:55,237 INFO    SenderThread:19311 [sender.py:transition_state():587] send defer: 14
+2025-02-24 16:36:55,238 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: defer
+2025-02-24 16:36:55,238 INFO    HandlerThread:19311 [handler.py:handle_request_defer():170] handle defer: 14
+2025-02-24 16:36:55,238 DEBUG   SenderThread:19311 [sender.py:send():336] send: final
+2025-02-24 16:36:55,238 DEBUG   SenderThread:19311 [sender.py:send():336] send: footer
+2025-02-24 16:36:55,238 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: defer
+2025-02-24 16:36:55,238 INFO    SenderThread:19311 [sender.py:send_request_defer():583] handle sender defer: 14
+2025-02-24 16:36:55,238 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: poll_exit
+2025-02-24 16:36:55,238 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: poll_exit
+2025-02-24 16:36:55,239 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: server_info
+2025-02-24 16:36:55,239 DEBUG   SenderThread:19311 [sender.py:send_request():363] send_request: server_info
+2025-02-24 16:36:55,241 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: get_summary
+2025-02-24 16:36:55,241 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: sampled_history
+2025-02-24 16:36:55,488 INFO    MainThread:19311 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2025-02-24 16:36:55,488 INFO    MainThread:19311 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2025-02-24 16:36:55,488 INFO    MainThread:19311 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2025-02-24 16:36:55,488 DEBUG   HandlerThread:19311 [handler.py:handle_request():144] handle_request: shutdown
+2025-02-24 16:36:55,488 INFO    HandlerThread:19311 [handler.py:finish():841] shutting down handler
+2025-02-24 16:36:56,239 INFO    WriterThread:19311 [datastore.py:close():299] close: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250224_162435-lvbwwqt0/run-lvbwwqt0.wandb
+2025-02-24 16:36:56,488 INFO    SenderThread:19311 [sender.py:finish():1493] shutting down sender
+2025-02-24 16:36:56,488 INFO    SenderThread:19311 [file_pusher.py:finish():162] shutting down file pusher
+2025-02-24 16:36:56,488 INFO    SenderThread:19311 [file_pusher.py:join():167] waiting for file pusher

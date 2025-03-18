@@ -1,0 +1,149 @@
+Starting PoDD Stage 1/5
+Check the length of the training dataset 50000
+GPU_0_using curriculum 98 with window 60
+
+
+
+
+ 40%|████      | 4/10 [00:16<00:24,  4.01s/it]
+
+
+
+
+
+100%|██████████| 10/10 [00:39<00:00,  3.95s/it]
+  0%|          | 0/10 [00:00<?, ?it/s]
+The current update step is 10
+Check the length of the training dataset 50000
+
+
+
+
+
+ 50%|█████     | 5/10 [00:19<00:20,  4.00s/it]
+
+
+
+
+
+100%|██████████| 10/10 [00:39<00:00,  3.94s/it]
+The current update step is 20
+End of Stage. Saving Poster and Label
+ *   Acc@1 20.490
+ *   Acc@1 20.702
+ *   Acc@1 20.702
+ *   Acc@1 20.240
+ *   Acc@1 20.716
+ *   Acc@1 20.716
+ *   Acc@1 20.180
+ *   Acc@1 20.550
+ *   Acc@1 20.550
+ *   Acc@1 19.840
+ *   Acc@1 20.486
+ *   Acc@1 20.486
+ *   Acc@1 19.440
+ *   Acc@1 19.590
+ *   Acc@1 19.590
+ *   Acc@1 19.540
+ *   Acc@1 19.806
+ *   Acc@1 19.806
+ *   Acc@1 19.450
+ *   Acc@1 19.906
+ *   Acc@1 19.906
+ *   Acc@1 19.480
+ *   Acc@1 19.892
+ *   Acc@1 19.892
+ *   Acc@1 19.590
+ *   Acc@1 20.058
+ *   Acc@1 20.058
+ *   Acc@1 19.440
+ *   Acc@1 19.992
+ *   Acc@1 19.992
+ *   Acc@1 19.380
+ *   Acc@1 19.894
+ *   Acc@1 19.894
+ *   Acc@1 19.470
+ *   Acc@1 19.762
+ *   Acc@1 19.762
+ *   Acc@1 19.810
+ *   Acc@1 20.468
+ *   Acc@1 20.468
+ *   Acc@1 19.520
+ *   Acc@1 20.046
+ *   Acc@1 20.046
+ *   Acc@1 19.260
+ *   Acc@1 19.878
+ *   Acc@1 19.878
+ *   Acc@1 18.720
+ *   Acc@1 19.536
+ *   Acc@1 19.536
+ *   Acc@1 20.470
+ *   Acc@1 21.022
+ *   Acc@1 21.022
+ *   Acc@1 20.840
+ *   Acc@1 21.302
+ *   Acc@1 21.302
+ *   Acc@1 21.210
+ *   Acc@1 21.506
+ *   Acc@1 21.506
+ *   Acc@1 21.110
+ *   Acc@1 21.488
+ *   Acc@1 21.488
+ *   Acc@1 19.120
+ *   Acc@1 19.754
+ *   Acc@1 19.754
+ *   Acc@1 19.360
+ *   Acc@1 19.878
+ *   Acc@1 19.878
+ *   Acc@1 19.550
+ *   Acc@1 19.708
+ *   Acc@1 19.708
+ *   Acc@1 19.430
+ *   Acc@1 19.718
+ *   Acc@1 19.718
+ *   Acc@1 19.840
+ *   Acc@1 20.540
+ *   Acc@1 20.540
+ *   Acc@1 19.920
+ *   Acc@1 20.554
+ *   Acc@1 20.554
+ *   Acc@1 19.790
+ *   Acc@1 20.434
+ *   Acc@1 20.434
+ *   Acc@1 19.700
+ *   Acc@1 20.356
+ *   Acc@1 20.356
+ *   Acc@1 20.680
+ *   Acc@1 21.090
+ *   Acc@1 21.090
+ *   Acc@1 20.880
+ *   Acc@1 21.122
+ *   Acc@1 21.122
+ *   Acc@1 20.710
+ *   Acc@1 21.132
+ *   Acc@1 21.132
+ *   Acc@1 20.750
+ *   Acc@1 20.976
+ *   Acc@1 20.976
+Training for 300 epoch: 19.93
+Training for 600 epoch: 19.9675
+Training for 1000 epoch: 19.94125
+Training for 2000 epoch: 19.812499999999996
+Training for 300 epoch: 20.403000000000002
+Training for 600 epoch: 20.427
+Training for 1000 epoch: 20.376
+Training for 2000 epoch: 20.27675
+Training for 300 epoch: 20.403000000000002
+Training for 600 epoch: 20.427
+Training for 1000 epoch: 20.376
+Training for 2000 epoch: 20.27675
+Traceback (most recent call last):
+  File "/home/FYP/spyridon001/PoDD_Modified/main.py", line 67, in <module>
+    main_worker(args)
+  File "/home/FYP/spyridon001/PoDD_Modified/src/base.py", line 331, in main_worker
+    model.module.update_stage_proportions(test_acc[0])  # Updates probabilities
+  File "/home/FYP/spyridon001/PoDD_Modified/src/PoDD.py", line 158, in update_stage_proportions
+    num_stages = self.current_stage + 1  # Only use completed stages
+  File "/home/FYP/spyridon001/.conda/envs/podd_modified/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1269, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'PoDD' object has no attribute 'current_stage'

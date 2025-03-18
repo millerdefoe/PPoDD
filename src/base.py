@@ -200,117 +200,144 @@ def main_worker(args):
             name=args.name,
             config=vars(args))
 
-    for epoch in range(args.start_epoch, args.epochs):
-        # initialize the EMA
-        if epoch == 0:
-            model.module.ema_init(args.clip_coef)
+    ######### MULTI STAGE ###########
+    num_stages = args.num_stages
+    epochs_per_stage = args.epochs // args.num_stages  # Divide total epochs evenly across stages
+    stage_accuracies = [] 
+    for stage in range(num_stages):  
+        print(f"Starting PoDD Stage {stage+1}/{num_stages}")
 
-        if args.train_y:
-            print(
-                f"[DEBUG] Max={float(optimizer.param_groups[1]['params'][0].max().cpu())} Min={float(optimizer.param_groups[1]['params'][0].min().cpu())}")
+        # Inherit the previous stage's poster
+        if stage > 0:  
+            model.module.data = model.module.posters[stage - 1].clone().detach()
+            model.module.label = model.module.labels[stage - 1].clone().detach()
 
-        grad_tmp, losses_avg, distill_steps = train(train_loader1, None, model, criterion,
-                                                    optimizer, epoch, device, distill_steps, args)
-        grad_acc.append(grad_tmp)
-        print('The current update step is {}'.format(distill_steps))
+        for epoch in range(2):   #epochs_per_stage <- CHANGE BACK
+            if epoch == 0:
+                model.module.ema_init(args.clip_coef)
 
-        # evaluate on validation set
-        if epoch > 400 * int(5 / args.update_steps):
-            args.test_freq = 10 * int(5 / args.update_steps)
+            if args.train_y:
+                print(
+                    f"[DEBUG] Max={float(optimizer.param_groups[1]['params'][0].max().cpu())} Min={float(optimizer.param_groups[1]['params'][0].min().cpu())}")
 
-        if (epoch - args.start_epoch + start_test_epoch) % args.test_freq == 0:
-            if model.module.data.get_device() == 0:
-                print('The current seed is {}'.format(torch.seed()))
-            if model.module.data.get_device() == 0:
-                print('The current lr is: {}'.format(model.module.lr))
-            if model.module.data.get_device() == 0:
-                print('Testing Results:')
+            grad_tmp, losses_avg, distill_steps = train(train_loader1, None, model, criterion,
+                                                        optimizer, epoch, device, distill_steps, args)
+            grad_acc.append(grad_tmp)
+            print('The current update step is {}'.format(distill_steps))
 
-            test_acc, test_loss, scores = test([test_loader, train_loader1, train_loader2], model, criterion, args)
-            if model.module.data.get_device() == 0:
-                print(test_acc)
+            # evaluate on validation set
+            if epoch > 400 * int(5 / args.update_steps):
+                args.test_freq = 10 * int(5 / args.update_steps)
 
-            tmp_index = test_acc[2].index(max(test_acc[2]))
-
-            if model.module.data.get_device() == 0 and args.wandb:
-                wandb.log({"loss": test_loss,
-                           "epoch": int(epoch * args.update_steps / 5), 'distill_steps': distill_steps,
-                           "grad_norm": grad_tmp[-1],
-                           "train_acc": test_acc[2][-1], "train_acc_full": test_acc[1][-1], "test_acc": test_acc[0][-1],
-                           "curr": model.module.curriculum})
-
-            if model.module.data.get_device() == 0 and args.wandb:
-                image_log_dict = {}
-                curr_distilled_data = model.module.data.clone().cpu().detach()
-
-                # inverse the zca one patch at a time, then combine the patches to a poster (for visualization)
-                if zca_inverse is not None:
-                    patches = get_crops_from_poster(curr_distilled_data, image_size_x, image_size_y,
-                                                    args.patch_num_x, args.patch_num_y)
-                    patches_shape = patches.shape
-                    patches = patches.reshape(args.patch_num_x,
-                                              args.patch_num_y,
-                                              *patches_shape[1:]).permute(1, 0, 3, 4, 2).reshape(-1, *patches_shape[1:])
-
-                    patches = \
-                        np.ascontiguousarray(patches, dtype=np.float32).reshape(patches_shape[0], -1).astype('float32')
-                    patches = patches.dot(zca_inverse)
-                    patches = torch.Tensor(patches.reshape(patches_shape).astype('float32'))
-                    patches = patches.reshape(patches.shape[0], -1, 3)[:, :, [1, 2, 0]].permute(0, 2, 1).reshape(
-                        patches_shape)
-                    inverse_distilled = combine_images_with_fade(patches, args.poster_width, args.poster_height,
-                                                                 args.patch_num_x, args.patch_num_y)[[2, 0, 1], :, :]
-                    clip_val = 4
-                    mean, std = inverse_distilled.mean(), inverse_distilled.std()
-                    inverse_distilled = np.clip(inverse_distilled, a_min=mean - clip_val * std,
-                                                a_max=mean + clip_val * std)
-                    image_log_dict['inverse_zca_poster'] = wandb.Image(inverse_distilled)
-
-                image_log_dict['distilled_poster'] = wandb.Image(
-                    curr_distilled_data.squeeze().numpy().transpose(1, 2, 0))
-                wandb.log(image_log_dict)
-
-            # remember best acc@1 and save checkpoint
-            is_best = test_acc[2][tmp_index] > best_acc1
-            if is_best:
-                best_acc1 = max(test_acc[2][tmp_index], best_acc1)
+            if (epoch - args.start_epoch + start_test_epoch) % args.test_freq == 0:
                 if model.module.data.get_device() == 0:
-                    best_rec['acc'] = test_acc[2][tmp_index]
-                    best_rec['test'] = test_acc[0]
-                    best_rec['train'] = test_acc[2]
-                    best_rec['ind'] = tmp_index
-                    best_rec['epoch'] = epoch + 1
-                    best_rec['data'] = model.module.data.clone().cpu().detach().numpy()
-                    if args.train_y:
-                        best_rec['label'] = model.module.label.data.cpu().clone().numpy()
+                    print('The current seed is {}'.format(torch.seed()))
+                if model.module.data.get_device() == 0:
+                    print('The current lr is: {}'.format(model.module.lr))
+                if model.module.data.get_device() == 0:
+                    print('Testing Results:')
 
-            if test_loss < best_loss1:
-                best_loss1 = test_loss
-                best_loss_ind = epoch
+                test_acc, test_loss, scores = test([test_loader, train_loader1, train_loader2], model, criterion, args)
+                if model.module.data.get_device() == 0:
+                    print(test_acc)
 
-                # save the current poster:
-                file_name = wandb.run.id if args.wandb else 'PoDD_run'
-                torch.save(model.module.data.clone().cpu().detach(), f'checkpoints/{file_name}_poster.pt')
-                if args.train_y:
-                    torch.save(model.module.label.clone().cpu().detach(), f'checkpoints/{file_name}_label.pt')
+                tmp_index = test_acc[2].index(max(test_acc[2]))
 
-            else:
-                if epoch >= best_loss_ind + 200:
+                if model.module.data.get_device() == 0 and args.wandb:
+                    wandb.log({"loss": test_loss,
+                            "epoch": int(epoch * args.update_steps / 5), 'distill_steps': distill_steps,
+                            "grad_norm": grad_tmp[-1],
+                            "train_acc": test_acc[2][-1], "train_acc_full": test_acc[1][-1], "test_acc": test_acc[0][-1],
+                            "curr": model.module.curriculum})
+
+                if model.module.data.get_device() == 0 and args.wandb:
+                    image_log_dict = {}
+                    curr_distilled_data = model.module.data.clone().cpu().detach()
+
+                    # inverse the zca one patch at a time, then combine the patches to a poster (for visualization)
+                    if zca_inverse is not None:
+                        patches = get_crops_from_poster(curr_distilled_data, image_size_x, image_size_y,
+                                                        args.patch_num_x, args.patch_num_y)
+                        patches_shape = patches.shape
+                        patches = patches.reshape(args.patch_num_x,
+                                                args.patch_num_y,
+                                                *patches_shape[1:]).permute(1, 0, 3, 4, 2).reshape(-1, *patches_shape[1:])
+
+                        patches = \
+                            np.ascontiguousarray(patches, dtype=np.float32).reshape(patches_shape[0], -1).astype('float32')
+                        patches = patches.dot(zca_inverse)
+                        patches = torch.Tensor(patches.reshape(patches_shape).astype('float32'))
+                        patches = patches.reshape(patches.shape[0], -1, 3)[:, :, [1, 2, 0]].permute(0, 2, 1).reshape(
+                            patches_shape)
+                        inverse_distilled = combine_images_with_fade(patches, args.poster_width, args.poster_height,
+                                                                    args.patch_num_x, args.patch_num_y)[[2, 0, 1], :, :]
+                        clip_val = 4
+                        mean, std = inverse_distilled.mean(), inverse_distilled.std()
+                        inverse_distilled = np.clip(inverse_distilled, a_min=mean - clip_val * std,
+                                                    a_max=mean + clip_val * std)
+                        image_log_dict['inverse_zca_poster'] = wandb.Image(inverse_distilled)
+
+                    image_log_dict['distilled_poster'] = wandb.Image(
+                        curr_distilled_data.squeeze().numpy().transpose(1, 2, 0))
+                    wandb.log(image_log_dict)
+
+                # remember best acc@1 and save checkpoint
+                is_best = test_acc[2][tmp_index] > best_acc1
+                if is_best:
+                    best_acc1 = max(test_acc[2][tmp_index], best_acc1)
+                    if model.module.data.get_device() == 0:
+                        best_rec['acc'] = test_acc[2][tmp_index]
+                        best_rec['test'] = test_acc[0]
+                        best_rec['train'] = test_acc[2]
+                        best_rec['ind'] = tmp_index
+                        best_rec['epoch'] = epoch + 1
+                        best_rec['data'] = model.module.data.clone().cpu().detach().numpy()
+                        if args.train_y:
+                            best_rec['label'] = model.module.label.data.cpu().clone().numpy()
+
+                if test_loss < best_loss1:
+                    best_loss1 = test_loss
                     best_loss_ind = epoch
-                    if args.ddtype == 'curriculum':
-                        if args.cctype == 0:
-                            if model.module.curriculum == args.minwindow:
-                                break
 
-                        elif args.cctype == 1:
-                            if model.module.curriculum == args.totwindow - args.window:
-                                break
+                    # save the current poster:
+                    file_name = wandb.run.id if args.wandb else 'PoDD_run'
+                    torch.save(model.module.data.clone().cpu().detach(), f'checkpoints/{file_name}_poster.pt')
+                    if args.train_y:
+                        torch.save(model.module.label.clone().cpu().detach(), f'checkpoints/{file_name}_label.pt')
 
-                            model.module.curriculum += args.window
-                            model.module.curriculum = min(args.totwindow - args.window, model.module.curriculum)
+                else:
+                    if epoch >= best_loss_ind + 200:
+                        best_loss_ind = epoch
+                        if args.ddtype == 'curriculum':
+                            if args.cctype == 0:
+                                if model.module.curriculum == args.minwindow:
+                                    break
 
-            print('train loss {}, epoch {}, best loss {}, best_epoch {}'.format(test_loss, epoch,
-                                                                                best_loss1, best_loss_ind))
+                            elif args.cctype == 1:
+                                if model.module.curriculum == args.totwindow - args.window:
+                                    break
+
+                                model.module.curriculum += args.window
+                                model.module.curriculum = min(args.totwindow - args.window, model.module.curriculum)
+
+                print('train loss {}, epoch {}, best loss {}, best_epoch {}'.format(test_loss, epoch,
+                                                                                    best_loss1, best_loss_ind))
+
+        # Save the distilled dataset at the end of each stage
+        ######## AFTER PASTE ###########
+        print("End of Stage. Saving Poster and Label")
+        model.module.current_stage += 1  
+        model.module.posters[stage] = model.module.data.clone().detach()
+        model.module.labels[stage] = model.module.label.clone().detach()
+
+        test_acc, _, _ = test([test_loader, train_loader1, train_loader2], model, criterion, args)  
+        stage_accuracies.append(max(test_acc[0]))  # Save test accuracy for each stage
+        model.module.update_stage_proportions(stage_accuracies)  # Updates probabilities
+
+
+        print(f"Completed Stage {stage+1}/{args.num_stages}!\n")
+
+        
 
 
 def train(train_loader1, train_loader2, model, criterion, optimizer, epoch, device, distill_steps, args):
@@ -511,3 +538,6 @@ def default_test(val_loader, model, criterion, args):
         progress.display_summary()
 
     return top1.avg, losses.avg
+
+
+

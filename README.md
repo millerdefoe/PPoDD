@@ -1,7 +1,13 @@
 # Distilling Datasets Into Less Than One Image
 Official PyTorch Implementation for the "Distilling Datasets Into Less Than One Image" paper.  
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/distilling-datasets-into-less-than-one-image/dataset-distillation-1ipc-on-cifar-10)](https://paperswithcode.com/sota/dataset-distillation-1ipc-on-cifar-10?p=distilling-datasets-into-less-than-one-image)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/distilling-datasets-into-less-than-one-image/dataset-distillation-1ipc-on-cifar-100)](https://paperswithcode.com/sota/dataset-distillation-1ipc-on-cifar-100?p=distilling-datasets-into-less-than-one-image)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/distilling-datasets-into-less-than-one-image/dataset-distillation-1ipc-on-cub-200-2011)](https://paperswithcode.com/sota/dataset-distillation-1ipc-on-cub-200-2011?p=distilling-datasets-into-less-than-one-image)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/distilling-datasets-into-less-than-one-image/dataset-distillation-1ipc-on-tinyimagenet)](https://paperswithcode.com/sota/dataset-distillation-1ipc-on-tinyimagenet?p=distilling-datasets-into-less-than-one-image)
+
 <p align="center">
-    🌐 <a href="https://vision.huji.ac.il/podd/" target="_blank">Project</a> | 📃 <a href="#" target="_blank">Paper - Coming Soon...</a> <br>
+    🌐 <a href="https://vision.huji.ac.il/podd/" target="_blank">Project</a> | 📃 <a href="https://arxiv.org/abs/2403.12040" target="_blank">Paper</a> <br>
 </p>
 
 
@@ -18,7 +24,7 @@ ___
 > **Distilling Datasets Into Less Than One Image**<br>
 > Asaf Shul*, Eliahu Horwitz*, Yedid Hoshen<br>
 > *Equal contribution<br>
-> <a href="https://arxiv.org/" target="_blank">https://arxiv.org/ </a> <br>
+> <a href="https://arxiv.org/abs/2403.12040" target="_blank">https://arxiv.org/abs/2403.12040 </a> <br>
 >
 >**Abstract:** Dataset distillation aims to compress a dataset into a much smaller one 
 > so that a model trained on the distilled dataset achieves high accuracy. 
@@ -140,7 +146,12 @@ The main change is replacing the distillation functionality in `src/base.py` and
 If you find this useful for your research, please use the following.
 
 ```
-Coming soon...
+@article{shul2024distilling,
+  title={Distilling Datasets Into Less Than One Image},
+  author={Shul, Asaf and Horwitz, Eliahu and Hoshen, Yedid},
+  journal={arXiv preprint arXiv:2403.12040},
+  year={2024}
+}
 ```
 
 ## Acknowledgments

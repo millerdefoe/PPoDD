@@ -1,0 +1,564 @@
+
+  0%|          | 0/10 [00:00<?, ?it/s]
+Check the length of the training dataset 50000
+
+
+
+
+ 50%|█████     | 5/10 [00:10<00:08,  1.76s/it]
+
+
+
+100%|██████████| 10/10 [00:17<00:00,  1.79s/it]
+  0%|          | 0/10 [00:00<?, ?it/s]
+The current update step is 10
+Check the length of the training dataset 50000
+
+
+
+ 30%|███       | 3/10 [00:04<00:10,  1.57s/it]
+
+
+
+
+ 80%|████████  | 8/10 [00:12<00:03,  1.63s/it]
+The current update step is 20
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:15<00:00,  1.59s/it]
+
+
+
+ 40%|████      | 4/10 [00:05<00:08,  1.35s/it]
+
+
+
+ 90%|█████████ | 9/10 [00:11<00:01,  1.27s/it]
+The current update step is 30
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:13<00:00,  1.31s/it]
+
+
+
+ 40%|████      | 4/10 [00:05<00:08,  1.43s/it]
+
+
+
+ 90%|█████████ | 9/10 [00:12<00:01,  1.46s/it]
+The current update step is 40
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:14<00:00,  1.47s/it]
+
+
+
+ 30%|███       | 3/10 [00:04<00:11,  1.63s/it]
+
+
+
+
+
+100%|██████████| 10/10 [00:16<00:00,  1.62s/it]
+The current update step is 50
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:16<00:00,  1.63s/it]
+
+
+
+ 40%|████      | 4/10 [00:06<00:09,  1.62s/it]
+
+
+
+
+ 90%|█████████ | 9/10 [00:14<00:01,  1.65s/it]
+The current update step is 60
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:16<00:00,  1.64s/it]
+
+
+
+ 40%|████      | 4/10 [00:06<00:09,  1.58s/it]
+
+
+
+ 80%|████████  | 8/10 [00:12<00:03,  1.51s/it]
+The current update step is 70
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:15<00:00,  1.52s/it]
+
+
+
+ 40%|████      | 4/10 [00:05<00:08,  1.43s/it]
+
+
+
+
+ 90%|█████████ | 9/10 [00:13<00:01,  1.51s/it]
+The current update step is 80
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:14<00:00,  1.47s/it]
+
+
+
+ 40%|████      | 4/10 [00:06<00:09,  1.57s/it]
+
+
+
+
+ 90%|█████████ | 9/10 [00:14<00:01,  1.57s/it]
+The current update step is 90
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:15<00:00,  1.60s/it]
+
+
+
+ 40%|████      | 4/10 [00:06<00:09,  1.57s/it]
+
+
+
+ 80%|████████  | 8/10 [00:12<00:03,  1.57s/it]
+The current update step is 100
+The current seed is 10020942581444656330
+The current lr is: 0.001
+
+100%|██████████| 10/10 [00:15<00:00,  1.56s/it]
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+Training for 300 epoch: 10.0
+Training for 600 epoch: 10.0
+Training for 1000 epoch: 10.0
+Training for 2000 epoch: 10.0
+Training for 300 epoch: 10.0
+Training for 600 epoch: 10.0
+Training for 1000 epoch: 10.0
+Training for 2000 epoch: 10.0
+Training for 300 epoch: 10.0
+Training for 600 epoch: 10.0
+Training for 1000 epoch: 10.0
+Training for 2000 epoch: 10.0
+[[10.0, 10.0, 10.0, 10.0], [10.0, 10.0, 10.0, 10.0], [10.0, 10.0, 10.0, 10.0]]
+train loss 1.7408164739608765, epoch 9, best loss 1.7408164739608765, best_epoch 9
+Check the length of the training dataset 50000
+GPU_0_using curriculum 55 with window 60
+
+
+ 30%|███       | 3/10 [00:04<00:10,  1.43s/it]
+
+
+
+
+ 90%|█████████ | 9/10 [00:12<00:01,  1.40s/it]
+The current update step is 110
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:13<00:00,  1.39s/it]
+
+
+
+ 40%|████      | 4/10 [00:06<00:09,  1.58s/it]
+
+
+
+
+ 90%|█████████ | 9/10 [00:14<00:01,  1.59s/it]
+The current update step is 120
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:16<00:00,  1.60s/it]
+
+
+ 40%|████      | 4/10 [00:05<00:07,  1.33s/it]
+
+
+
+
+ 90%|█████████ | 9/10 [00:12<00:01,  1.35s/it]
+The current update step is 130
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:13<00:00,  1.36s/it]
+
+
+ 40%|████      | 4/10 [00:05<00:08,  1.42s/it]
+
+
+
+
+ 90%|█████████ | 9/10 [00:12<00:01,  1.40s/it]
+The current update step is 140
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:13<00:00,  1.40s/it]
+
+
+ 40%|████      | 4/10 [00:05<00:08,  1.36s/it]
+
+
+
+ 90%|█████████ | 9/10 [00:11<00:01,  1.30s/it]
+The current update step is 150
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:13<00:00,  1.32s/it]
+
+
+
+ 40%|████      | 4/10 [00:05<00:08,  1.35s/it]
+
+
+
+ 90%|█████████ | 9/10 [00:11<00:01,  1.30s/it]
+The current update step is 160
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:13<00:00,  1.32s/it]
+
+
+ 40%|████      | 4/10 [00:05<00:08,  1.36s/it]
+
+
+
+
+ 90%|█████████ | 9/10 [00:12<00:01,  1.40s/it]
+The current update step is 170
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:13<00:00,  1.40s/it]
+
+
+
+ 40%|████      | 4/10 [00:06<00:09,  1.60s/it]
+
+
+
+
+ 90%|█████████ | 9/10 [00:14<00:01,  1.65s/it]
+The current update step is 180
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:16<00:00,  1.64s/it]
+
+
+ 30%|███       | 3/10 [00:04<00:09,  1.38s/it]
+
+
+
+
+ 90%|█████████ | 9/10 [00:12<00:01,  1.34s/it]
+The current update step is 190
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:13<00:00,  1.35s/it]
+
+
+ 30%|███       | 3/10 [00:04<00:10,  1.45s/it]
+
+
+
+
+ 90%|█████████ | 9/10 [00:12<00:01,  1.43s/it]
+The current update step is 200
+The current seed is 16554878695011674942
+The current lr is: 0.001
+
+100%|██████████| 10/10 [00:14<00:00,  1.45s/it]
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+ *   Acc@1 10.000
+Training for 300 epoch: 10.0
+Training for 600 epoch: 10.0
+Training for 1000 epoch: 10.0
+Training for 2000 epoch: 10.0
+Training for 300 epoch: 10.0
+Training for 600 epoch: 10.0
+Training for 1000 epoch: 10.0
+Training for 2000 epoch: 10.0
+Training for 300 epoch: 10.0
+Training for 600 epoch: 10.0
+Training for 1000 epoch: 10.0
+Training for 2000 epoch: 10.0
+[[10.0, 10.0, 10.0, 10.0], [10.0, 10.0, 10.0, 10.0], [10.0, 10.0, 10.0, 10.0]]
+train loss 1.6690187811851502, epoch 19, best loss 1.6690187811851502, best_epoch 19
+Check the length of the training dataset 50000
+GPU_0_using curriculum 25 with window 60
+
+
+ 40%|████      | 4/10 [00:05<00:07,  1.27s/it]
+
+
+
+ 80%|████████  | 8/10 [00:10<00:02,  1.28s/it]
+The current update step is 210
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:12<00:00,  1.29s/it]
+
+
+ 30%|███       | 3/10 [00:03<00:08,  1.26s/it]
+
+
+
+
+ 90%|█████████ | 9/10 [00:11<00:01,  1.31s/it]
+The current update step is 220
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:12<00:00,  1.29s/it]
+
+
+ 30%|███       | 3/10 [00:04<00:10,  1.48s/it]
+
+
+
+
+ 90%|█████████ | 9/10 [00:13<00:01,  1.46s/it]
+The current update step is 230
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:14<00:00,  1.48s/it]
+
+
+
+ 40%|████      | 4/10 [00:06<00:09,  1.57s/it]
+
+
+
+
+ 90%|█████████ | 9/10 [00:14<00:01,  1.56s/it]
+The current update step is 240
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:15<00:00,  1.56s/it]
+
+
+ 30%|███       | 3/10 [00:04<00:09,  1.35s/it]
+
+
+
+ 80%|████████  | 8/10 [00:10<00:02,  1.25s/it]
+The current update step is 250
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:12<00:00,  1.29s/it]
+
+
+
+ 40%|████      | 4/10 [00:05<00:08,  1.46s/it]
+
+
+
+
+ 90%|█████████ | 9/10 [00:13<00:01,  1.46s/it]
+The current update step is 260
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:14<00:00,  1.45s/it]
+
+
+ 30%|███       | 3/10 [00:04<00:10,  1.53s/it]
+
+
+
+
+ 80%|████████  | 8/10 [00:12<00:03,  1.53s/it]
+The current update step is 270
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:15<00:00,  1.54s/it]
+
+
+
+ 40%|████      | 4/10 [00:05<00:08,  1.46s/it]
+
+
+
+
+ 90%|█████████ | 9/10 [00:12<00:01,  1.42s/it]
+The current update step is 280
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:14<00:00,  1.43s/it]
+
+
+ 40%|████      | 4/10 [00:05<00:08,  1.36s/it]
+
+
+
+
+ 90%|█████████ | 9/10 [00:12<00:01,  1.36s/it]
+The current update step is 290
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:13<00:00,  1.39s/it]
+
+
+
+ 40%|████      | 4/10 [00:06<00:09,  1.64s/it]
+

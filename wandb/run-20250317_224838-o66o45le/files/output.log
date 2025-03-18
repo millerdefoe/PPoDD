@@ -1,0 +1,570 @@
+Starting PoDD Stage 1/5
+Check the length of the training dataset 50000
+GPU_0_using curriculum 98 with window 60
+
+
+
+
+ 40%|████      | 4/10 [00:24<00:29,  4.99s/it]
+
+
+
+
+
+ 90%|█████████ | 9/10 [00:42<00:03,  3.83s/it]
+The current update step is 10
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:46<00:00,  4.65s/it]
+
+
+
+
+
+ 50%|█████     | 5/10 [00:19<00:19,  3.87s/it]
+
+
+
+
+
+100%|██████████| 10/10 [00:39<00:00,  3.90s/it]
+The current update step is 20
+End of Stage. Saving Poster and Label
+ *   Acc@1 20.250
+ *   Acc@1 20.690
+ *   Acc@1 20.690
+ *   Acc@1 20.000
+ *   Acc@1 20.514
+ *   Acc@1 20.514
+ *   Acc@1 19.980
+ *   Acc@1 20.588
+ *   Acc@1 20.588
+ *   Acc@1 19.850
+ *   Acc@1 20.508
+ *   Acc@1 20.508
+ *   Acc@1 18.920
+ *   Acc@1 19.422
+ *   Acc@1 19.422
+ *   Acc@1 19.090
+ *   Acc@1 19.570
+ *   Acc@1 19.570
+ *   Acc@1 19.200
+ *   Acc@1 19.654
+ *   Acc@1 19.654
+ *   Acc@1 19.260
+ *   Acc@1 19.672
+ *   Acc@1 19.672
+ *   Acc@1 19.310
+ *   Acc@1 19.818
+ *   Acc@1 19.818
+ *   Acc@1 19.210
+ *   Acc@1 19.544
+ *   Acc@1 19.544
+ *   Acc@1 19.240
+ *   Acc@1 19.620
+ *   Acc@1 19.620
+ *   Acc@1 19.290
+ *   Acc@1 19.596
+ *   Acc@1 19.596
+ *   Acc@1 19.830
+ *   Acc@1 20.342
+ *   Acc@1 20.342
+ *   Acc@1 19.480
+ *   Acc@1 20.040
+ *   Acc@1 20.040
+ *   Acc@1 19.380
+ *   Acc@1 20.022
+ *   Acc@1 20.022
+ *   Acc@1 19.080
+ *   Acc@1 19.786
+ *   Acc@1 19.786
+ *   Acc@1 20.120
+ *   Acc@1 20.468
+ *   Acc@1 20.468
+ *   Acc@1 20.190
+ *   Acc@1 20.720
+ *   Acc@1 20.720
+ *   Acc@1 20.290
+ *   Acc@1 20.924
+ *   Acc@1 20.924
+ *   Acc@1 20.470
+ *   Acc@1 20.974
+ *   Acc@1 20.974
+ *   Acc@1 18.320
+ *   Acc@1 18.938
+ *   Acc@1 18.938
+ *   Acc@1 18.930
+ *   Acc@1 19.248
+ *   Acc@1 19.248
+ *   Acc@1 18.880
+ *   Acc@1 19.252
+ *   Acc@1 19.252
+ *   Acc@1 18.950
+ *   Acc@1 19.314
+ *   Acc@1 19.314
+ *   Acc@1 19.510
+ *   Acc@1 20.048
+ *   Acc@1 20.048
+ *   Acc@1 19.460
+ *   Acc@1 20.008
+ *   Acc@1 20.008
+ *   Acc@1 19.320
+ *   Acc@1 20.002
+ *   Acc@1 20.002
+ *   Acc@1 19.110
+ *   Acc@1 19.972
+ *   Acc@1 19.972
+ *   Acc@1 20.720
+ *   Acc@1 21.238
+ *   Acc@1 21.238
+ *   Acc@1 20.640
+ *   Acc@1 21.228
+ *   Acc@1 21.228
+ *   Acc@1 20.730
+ *   Acc@1 21.190
+ *   Acc@1 21.190
+ *   Acc@1 20.660
+ *   Acc@1 21.022
+ *   Acc@1 21.022
+Training for 300 epoch: 19.6225
+Training for 600 epoch: 19.625
+Training for 1000 epoch: 19.627499999999998
+Training for 2000 epoch: 19.58375
+Training for 300 epoch: 20.1205
+Training for 600 epoch: 20.109
+Training for 1000 epoch: 20.1565
+Training for 2000 epoch: 20.1055
+Training for 300 epoch: 20.1205
+Training for 600 epoch: 20.109
+Training for 1000 epoch: 20.1565
+Training for 2000 epoch: 20.1055
+Updated Stage Proportions: [0.62242939 0.37757061 0.2        0.1        0.        ]
+Completed Stage 1/5!
+Starting PoDD Stage 2/5
+Check the length of the training dataset 50000
+GPU_0_using curriculum 10 with window 60
+
+
+
+
+ 40%|████      | 4/10 [00:08<00:13,  2.19s/it]
+
+
+
+
+
+ 90%|█████████ | 9/10 [00:19<00:02,  2.15s/it]
+The current update step is 30
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:21<00:00,  2.16s/it]
+
+
+
+
+ 40%|████      | 4/10 [00:10<00:15,  2.53s/it]
+
+
+
+
+
+ 90%|█████████ | 9/10 [00:22<00:02,  2.53s/it]
+The current update step is 40
+
+100%|██████████| 10/10 [00:25<00:00,  2.53s/it]
+ *   Acc@1 19.310
+ *   Acc@1 19.730
+ *   Acc@1 19.730
+ *   Acc@1 19.430
+ *   Acc@1 19.880
+ *   Acc@1 19.880
+ *   Acc@1 19.470
+ *   Acc@1 19.824
+ *   Acc@1 19.824
+ *   Acc@1 19.350
+ *   Acc@1 19.824
+ *   Acc@1 19.824
+ *   Acc@1 19.430
+ *   Acc@1 20.334
+ *   Acc@1 20.334
+ *   Acc@1 19.720
+ *   Acc@1 20.358
+ *   Acc@1 20.358
+ *   Acc@1 19.610
+ *   Acc@1 20.254
+ *   Acc@1 20.254
+ *   Acc@1 19.620
+ *   Acc@1 20.172
+ *   Acc@1 20.172
+ *   Acc@1 20.350
+ *   Acc@1 20.900
+ *   Acc@1 20.900
+ *   Acc@1 20.020
+ *   Acc@1 20.902
+ *   Acc@1 20.902
+ *   Acc@1 19.970
+ *   Acc@1 20.908
+ *   Acc@1 20.908
+ *   Acc@1 20.170
+ *   Acc@1 20.842
+ *   Acc@1 20.842
+ *   Acc@1 19.800
+ *   Acc@1 20.218
+ *   Acc@1 20.218
+ *   Acc@1 20.030
+ *   Acc@1 20.290
+ *   Acc@1 20.290
+ *   Acc@1 19.930
+ *   Acc@1 20.346
+ *   Acc@1 20.346
+ *   Acc@1 19.940
+ *   Acc@1 20.278
+ *   Acc@1 20.278
+ *   Acc@1 20.070
+ *   Acc@1 20.484
+ *   Acc@1 20.484
+ *   Acc@1 19.970
+ *   Acc@1 20.364
+ *   Acc@1 20.364
+ *   Acc@1 19.880
+ *   Acc@1 20.282
+ *   Acc@1 20.282
+ *   Acc@1 19.850
+ *   Acc@1 20.266
+ *   Acc@1 20.266
+ *   Acc@1 20.820
+ *   Acc@1 20.672
+ *   Acc@1 20.672
+ *   Acc@1 20.570
+ *   Acc@1 20.720
+ *   Acc@1 20.720
+ *   Acc@1 20.540
+ *   Acc@1 20.868
+ *   Acc@1 20.868
+ *   Acc@1 20.560
+ *   Acc@1 20.910
+ *   Acc@1 20.910
+ *   Acc@1 18.820
+ *   Acc@1 19.308
+ *   Acc@1 19.308
+ *   Acc@1 18.660
+ *   Acc@1 19.392
+ *   Acc@1 19.392
+ *   Acc@1 18.780
+ *   Acc@1 19.394
+ *   Acc@1 19.394
+ *   Acc@1 18.860
+ *   Acc@1 19.266
+ *   Acc@1 19.266
+ *   Acc@1 20.510
+ *   Acc@1 20.722
+ *   Acc@1 20.722
+ *   Acc@1 20.130
+ *   Acc@1 20.648
+ *   Acc@1 20.648
+ *   Acc@1 20.180
+ *   Acc@1 20.608
+ *   Acc@1 20.608
+ *   Acc@1 19.790
+ *   Acc@1 20.496
+ *   Acc@1 20.496
+Training for 300 epoch: 19.888749999999998
+Training for 600 epoch: 19.81625
+Training for 1000 epoch: 19.794999999999998
+Training for 2000 epoch: 19.767500000000002
+Training for 300 epoch: 20.296
+Training for 600 epoch: 20.31925
+Training for 1000 epoch: 20.3105
+Training for 2000 epoch: 20.25675
+Training for 300 epoch: 20.296
+Training for 600 epoch: 20.31925
+Training for 1000 epoch: 20.3105
+Training for 2000 epoch: 20.25675
+Updated Stage Proportions: [0.50749441 0.30668886 0.18581672 0.1        0.        ]
+Completed Stage 2/5!
+Starting PoDD Stage 3/5
+Check the length of the training dataset 50000
+GPU_0_using curriculum 130 with window 60
+
+
+
+
+ 40%|████      | 4/10 [00:12<00:17,  2.99s/it]
+
+
+
+
+
+ 90%|█████████ | 9/10 [00:26<00:03,  3.02s/it]
+The current update step is 50
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:30<00:00,  3.02s/it]
+
+
+
+
+ 40%|████      | 4/10 [00:11<00:17,  2.90s/it]
+
+
+
+
+
+ 90%|█████████ | 9/10 [00:27<00:03,  3.11s/it]
+The current update step is 60
+
+100%|██████████| 10/10 [00:30<00:00,  3.07s/it]
+ *   Acc@1 20.960
+ *   Acc@1 21.238
+ *   Acc@1 21.238
+ *   Acc@1 20.700
+ *   Acc@1 21.258
+ *   Acc@1 21.258
+ *   Acc@1 20.530
+ *   Acc@1 21.018
+ *   Acc@1 21.018
+ *   Acc@1 20.450
+ *   Acc@1 20.722
+ *   Acc@1 20.722
+ *   Acc@1 20.580
+ *   Acc@1 21.328
+ *   Acc@1 21.328
+ *   Acc@1 20.780
+ *   Acc@1 21.458
+ *   Acc@1 21.458
+ *   Acc@1 20.690
+ *   Acc@1 21.512
+ *   Acc@1 21.512
+ *   Acc@1 20.760
+ *   Acc@1 21.566
+ *   Acc@1 21.566
+ *   Acc@1 20.560
+ *   Acc@1 20.552
+ *   Acc@1 20.552
+ *   Acc@1 20.540
+ *   Acc@1 20.372
+ *   Acc@1 20.372
+ *   Acc@1 20.460
+ *   Acc@1 20.388
+ *   Acc@1 20.388
+ *   Acc@1 20.480
+ *   Acc@1 20.310
+ *   Acc@1 20.310
+ *   Acc@1 20.940
+ *   Acc@1 21.040
+ *   Acc@1 21.040
+ *   Acc@1 21.050
+ *   Acc@1 20.994
+ *   Acc@1 20.994
+ *   Acc@1 20.910
+ *   Acc@1 20.760
+ *   Acc@1 20.760
+ *   Acc@1 20.960
+ *   Acc@1 20.664
+ *   Acc@1 20.664
+ *   Acc@1 20.250
+ *   Acc@1 20.578
+ *   Acc@1 20.578
+ *   Acc@1 20.340
+ *   Acc@1 20.490
+ *   Acc@1 20.490
+ *   Acc@1 20.380
+ *   Acc@1 20.526
+ *   Acc@1 20.526
+ *   Acc@1 20.430
+ *   Acc@1 20.476
+ *   Acc@1 20.476
+ *   Acc@1 19.240
+ *   Acc@1 19.928
+ *   Acc@1 19.928
+ *   Acc@1 18.990
+ *   Acc@1 19.834
+ *   Acc@1 19.834
+ *   Acc@1 19.040
+ *   Acc@1 19.768
+ *   Acc@1 19.768
+ *   Acc@1 18.880
+ *   Acc@1 19.670
+ *   Acc@1 19.670
+ *   Acc@1 20.470
+ *   Acc@1 21.022
+ *   Acc@1 21.022
+ *   Acc@1 20.650
+ *   Acc@1 21.190
+ *   Acc@1 21.190
+ *   Acc@1 20.700
+ *   Acc@1 21.252
+ *   Acc@1 21.252
+ *   Acc@1 20.610
+ *   Acc@1 21.316
+ *   Acc@1 21.316
+ *   Acc@1 19.330
+ *   Acc@1 20.324
+ *   Acc@1 20.324
+ *   Acc@1 19.200
+ *   Acc@1 20.414
+ *   Acc@1 20.414
+ *   Acc@1 19.200
+ *   Acc@1 20.304
+ *   Acc@1 20.304
+ *   Acc@1 19.090
+ *   Acc@1 20.184
+ *   Acc@1 20.184
+Training for 300 epoch: 20.291249999999998
+Training for 600 epoch: 20.28125
+Training for 1000 epoch: 20.238749999999996
+Training for 2000 epoch: 20.2075
+Training for 300 epoch: 20.751250000000002
+Training for 600 epoch: 20.75125
+Training for 1000 epoch: 20.691000000000003
+Training for 2000 epoch: 20.6135
+Training for 300 epoch: 20.751250000000002
+Training for 600 epoch: 20.75125
+Training for 1000 epoch: 20.691000000000003
+Training for 2000 epoch: 20.6135
+Updated Stage Proportions: [0.45550438 0.27614122 0.16713714 0.10121727 0.        ]
+Completed Stage 3/5!
+Starting PoDD Stage 4/5
+Check the length of the training dataset 50000
+GPU_0_using curriculum 103 with window 60
+
+
+
+
+ 40%|████      | 4/10 [00:13<00:18,  3.11s/it]
+
+
+
+
+
+ 90%|█████████ | 9/10 [00:26<00:02,  2.79s/it]
+The current update step is 70
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:29<00:00,  2.98s/it]
+
+
+
+
+ 40%|████      | 4/10 [00:10<00:15,  2.52s/it]
+
+
+
+
+
+ 90%|█████████ | 9/10 [00:23<00:02,  2.65s/it]
+The current update step is 80
+
+100%|██████████| 10/10 [00:26<00:00,  2.60s/it]
+ *   Acc@1 20.270
+ *   Acc@1 20.238
+ *   Acc@1 20.238
+ *   Acc@1 20.110
+ *   Acc@1 20.264
+ *   Acc@1 20.264
+ *   Acc@1 19.840
+ *   Acc@1 20.342
+ *   Acc@1 20.342
+ *   Acc@1 19.700
+ *   Acc@1 20.264
+ *   Acc@1 20.264
+ *   Acc@1 20.470
+ *   Acc@1 20.654
+ *   Acc@1 20.654
+ *   Acc@1 20.180
+ *   Acc@1 20.622
+ *   Acc@1 20.622
+ *   Acc@1 20.040
+ *   Acc@1 20.684
+ *   Acc@1 20.684
+ *   Acc@1 19.990
+ *   Acc@1 20.390
+ *   Acc@1 20.390
+ *   Acc@1 21.060
+ *   Acc@1 21.668
+ *   Acc@1 21.668
+ *   Acc@1 21.110
+ *   Acc@1 21.706
+ *   Acc@1 21.706
+ *   Acc@1 20.980
+ *   Acc@1 21.612
+ *   Acc@1 21.612
+ *   Acc@1 20.760
+ *   Acc@1 21.528
+ *   Acc@1 21.528
+ *   Acc@1 20.740
+ *   Acc@1 21.244
+ *   Acc@1 21.244
+ *   Acc@1 20.470
+ *   Acc@1 21.230
+ *   Acc@1 21.230
+ *   Acc@1 20.350
+ *   Acc@1 21.024
+ *   Acc@1 21.024
+ *   Acc@1 20.380
+ *   Acc@1 20.986
+ *   Acc@1 20.986
+ *   Acc@1 19.150
+ *   Acc@1 19.904
+ *   Acc@1 19.904
+ *   Acc@1 19.300
+ *   Acc@1 19.950
+ *   Acc@1 19.950
+ *   Acc@1 19.000
+ *   Acc@1 19.912
+ *   Acc@1 19.912
+ *   Acc@1 18.940
+ *   Acc@1 19.686
+ *   Acc@1 19.686
+ *   Acc@1 21.480
+ *   Acc@1 21.630
+ *   Acc@1 21.630
+ *   Acc@1 21.660
+ *   Acc@1 21.658
+ *   Acc@1 21.658
+ *   Acc@1 21.590
+ *   Acc@1 21.910
+ *   Acc@1 21.910
+ *   Acc@1 21.670
+ *   Acc@1 22.008
+ *   Acc@1 22.008
+ *   Acc@1 19.630
+ *   Acc@1 20.290
+ *   Acc@1 20.290
+ *   Acc@1 19.360
+ *   Acc@1 20.048
+ *   Acc@1 20.048
+ *   Acc@1 19.380
+ *   Acc@1 19.938
+ *   Acc@1 19.938
+ *   Acc@1 19.020
+ *   Acc@1 19.854
+ *   Acc@1 19.854
+ *   Acc@1 18.830
+ *   Acc@1 18.950
+ *   Acc@1 18.950
+ *   Acc@1 18.660
+ *   Acc@1 18.798
+ *   Acc@1 18.798
+ *   Acc@1 18.470
+ *   Acc@1 18.688
+ *   Acc@1 18.688
+ *   Acc@1 18.320
+ *   Acc@1 18.694
+ *   Acc@1 18.694
+Training for 300 epoch: 20.20375
+Training for 600 epoch: 20.10625
+Training for 1000 epoch: 19.95625
+Training for 2000 epoch: 19.8475
+Training for 300 epoch: 20.572249999999997
+Training for 600 epoch: 20.5345
+Training for 1000 epoch: 20.513749999999995
+Training for 2000 epoch: 20.426249999999996
+Training for 300 epoch: 20.572249999999997
+Training for 600 epoch: 20.5345
+Training for 1000 epoch: 20.513749999999995
+Training for 2000 epoch: 20.426249999999996
+Traceback (most recent call last):
+  File "/home/FYP/spyridon001/PoDD_Modified/main.py", line 67, in <module>
+    main_worker(args)
+  File "/home/FYP/spyridon001/PoDD_Modified/src/base.py", line 332, in main_worker
+    model.module.update_stage_proportions(test_acc[0])  # Updates probabilities
+  File "/home/FYP/spyridon001/PoDD_Modified/src/PoDD.py", line 167, in update_stage_proportions
+    dynamic_probs = acc_weights * decay_factor
+ValueError: operands could not be broadcast together with shapes (4,) (5,)
