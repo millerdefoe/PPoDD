@@ -1,0 +1,205 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.10
+    framework: huggingface
+    huggingface_version: 4.37.1
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.9.16
+    start_time: 1742290479.920863
+    t:
+      1:
+      - 1
+      - 9
+      - 11
+      - 41
+      - 49
+      - 55
+      2:
+      - 1
+      - 9
+      - 11
+      - 41
+      - 49
+      - 55
+      3:
+      - 13
+      - 16
+      - 23
+      4: 3.9.16
+      5: 0.13.10
+      6: 4.37.1
+      8:
+      - 5
+arch:
+  desc: null
+  value: convnet
+batch_size:
+  desc: null
+  value: 5000
+batch_update_steps:
+  desc: null
+  value: 1
+cctype:
+  desc: null
+  value: 2
+class_area_height:
+  desc: null
+  value: 32
+class_area_width:
+  desc: null
+  value: 32
+class_order:
+  desc: null
+  value:
+  - - 0
+    - 8
+    - 5
+    - 7
+    - 4
+  - - 1
+    - 9
+    - 3
+    - 2
+    - 6
+clip_coef:
+  desc: null
+  value: 0.9
+comp_aug:
+  desc: null
+  value: false
+comp_aug_real:
+  desc: null
+  value: false
+comp_ipc:
+  desc: null
+  value: 1
+data_root:
+  desc: null
+  value: ./dataset/cifar10
+dataset:
+  desc: null
+  value: cifar10
+ddtype:
+  desc: null
+  value: curriculum
+decay:
+  desc: null
+  value: false
+distill_batch_size:
+  desc: null
+  value: 96
+epochs:
+  desc: null
+  value: 150
+eps:
+  desc: null
+  value: 1.0e-08
+inner_lr:
+  desc: null
+  value: 0.001
+inner_optim:
+  desc: null
+  value: Adam
+label_lr_scale:
+  desc: null
+  value: 1
+load_poster_run_name:
+  desc: null
+  value: ''
+lr:
+  desc: null
+  value: 0.001
+minwindow:
+  desc: null
+  value: 0
+name:
+  desc: null
+  value: PoDD-CIFAR10-MultiStage
+num_classes:
+  desc: null
+  value: 10
+num_stages:
+  desc: null
+  value: 5
+num_train_eval:
+  desc: null
+  value: 8
+outer_optim:
+  desc: null
+  value: Adam
+patch_num_x:
+  desc: null
+  value: 16
+patch_num_y:
+  desc: null
+  value: 6
+poster_class_num_x:
+  desc: null
+  value: 5
+poster_class_num_y:
+  desc: null
+  value: 2
+poster_height:
+  desc: null
+  value: 60
+poster_width:
+  desc: null
+  value: 153
+print_freq:
+  desc: null
+  value: 10
+rank:
+  desc: null
+  value: 0
+real_strategy:
+  desc: null
+  value: flip_rotate
+root:
+  desc: null
+  value: ./dataset
+seed:
+  desc: null
+  value: 0
+start_epoch:
+  desc: null
+  value: 0
+steps_per_epoch:
+  desc: null
+  value: 10
+syn_strategy:
+  desc: null
+  value: flip_rotate
+test_freq:
+  desc: null
+  value: 10
+totwindow:
+  desc: null
+  value: 200
+train_lr:
+  desc: null
+  value: false
+train_y:
+  desc: null
+  value: false
+update_steps:
+  desc: null
+  value: 1
+wandb:
+  desc: null
+  value: true
+wd:
+  desc: null
+  value: 0
+window:
+  desc: null
+  value: 60
+workers:
+  desc: null
+  value: 0
+zca:
+  desc: null
+  value: true

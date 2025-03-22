@@ -1,0 +1,185 @@
+2025-03-19 15:56:33,192 INFO    StreamThr :1384873 [internal.py:wandb_internal():87] W&B internal server running at pid: 1384873, started at: 2025-03-19 15:56:33.190323
+2025-03-19 15:56:33,193 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: status
+2025-03-19 15:56:33,215 INFO    WriterThread:1384873 [datastore.py:open_for_write():85] open: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/run-eofqa7cg.wandb
+2025-03-19 15:56:33,219 DEBUG   SenderThread:1384873 [sender.py:send():336] send: header
+2025-03-19 15:56:33,303 DEBUG   SenderThread:1384873 [sender.py:send():336] send: run
+2025-03-19 15:56:34,012 INFO    SenderThread:1384873 [dir_watcher.py:__init__():216] watching files in: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files
+2025-03-19 15:56:34,012 INFO    SenderThread:1384873 [sender.py:_start_run_threads():1067] run started: eofqa7cg with start time 1742370993.212175
+2025-03-19 15:56:34,012 DEBUG   SenderThread:1384873 [sender.py:send_request():363] send_request: summary_record
+2025-03-19 15:56:34,015 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: check_version
+2025-03-19 15:56:34,016 INFO    SenderThread:1384873 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2025-03-19 15:56:34,016 DEBUG   SenderThread:1384873 [sender.py:send_request():363] send_request: check_version
+2025-03-19 15:56:34,075 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: run_start
+2025-03-19 15:56:34,084 DEBUG   HandlerThread:1384873 [system_info.py:__init__():31] System info init
+2025-03-19 15:56:34,084 DEBUG   HandlerThread:1384873 [system_info.py:__init__():46] System info init done
+2025-03-19 15:56:34,084 INFO    HandlerThread:1384873 [system_monitor.py:start():151] Starting system monitor
+2025-03-19 15:56:34,084 INFO    SystemMonitor:1384873 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2025-03-19 15:56:34,084 INFO    HandlerThread:1384873 [system_monitor.py:probe():172] Collecting system info
+2025-03-19 15:56:34,085 INFO    SystemMonitor:1384873 [interfaces.py:start():168] Started cpu
+2025-03-19 15:56:34,086 INFO    SystemMonitor:1384873 [interfaces.py:start():168] Started disk
+2025-03-19 15:56:34,086 INFO    SystemMonitor:1384873 [interfaces.py:start():168] Started gpu
+2025-03-19 15:56:34,088 INFO    SystemMonitor:1384873 [interfaces.py:start():168] Started memory
+2025-03-19 15:56:34,088 INFO    SystemMonitor:1384873 [interfaces.py:start():168] Started network
+2025-03-19 15:56:34,097 DEBUG   HandlerThread:1384873 [system_info.py:probe():195] Probing system
+2025-03-19 15:56:34,106 DEBUG   HandlerThread:1384873 [system_info.py:_probe_git():180] Probing git
+2025-03-19 15:56:34,143 DEBUG   HandlerThread:1384873 [system_info.py:_probe_git():188] Probing git done
+2025-03-19 15:56:34,144 DEBUG   HandlerThread:1384873 [system_info.py:probe():241] Probing system done
+2025-03-19 15:56:34,144 DEBUG   HandlerThread:1384873 [system_monitor.py:probe():181] {'os': 'Linux-5.14.0-503.15.1.el9_5.x86_64-x86_64-with-glibc2.34', 'python': '3.9.16', 'heartbeatAt': '2025-03-19T07:56:34.098022', 'startedAt': '2025-03-19T07:56:33.121858', 'docker': None, 'cuda': None, 'args': ('--name=PoDD-CIFAR10-MultiStage', '--distill_batch_size=96', '--patch_num_x=16', '--patch_num_y=6', '--dataset=cifar10', '--num_train_eval=8', '--update_steps=1', '--batch_size=5000', '--ddtype=curriculum', '--cctype=2', '--epoch=150', '--test_freq=10', '--print_freq=10', '--arch=convnet', '--window=60', '--minwindow=0', '--totwindow=200', '--inner_optim=Adam', '--outer_optim=Adam', '--inner_lr=0.001', '--lr=0.001', '--syn_strategy=flip_rotate', '--real_strategy=flip_rotate', '--seed=0', '--zca', '--comp_ipc=1', '--class_area_width=32', '--class_area_height=32', '--poster_width=153', '--poster_height=60', '--poster_class_num_x=5', '--poster_class_num_y=2'), 'state': 'running', 'program': '/home/FYP/spyridon001/PoDD_Modified/main.py', 'codePath': 'main.py', 'git': {'remote': 'https://github.com/millerdefoe/PPoDD.git', 'commit': 'ce908b947a513c7b53258a65c513268ec34a8b6e'}, 'email': None, 'root': '/home/FYP/spyridon001/PoDD_Modified', 'host': 'TC1N06', 'username': 'spyridon001', 'executable': '/home/FYP/spyridon001/.conda/envs/podd_modified/bin/python', 'cpu_count': 36, 'cpu_count_logical': 72, 'cpu_freq': {'current': 2674.512916666667, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 3634.239, 'min': 0.0, 'max': 0.0}, {'current': 3600.013, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2267.75, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 1152.921, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 3636.171, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 3900.037, 'min': 0.0, 'max': 0.0}, {'current': 3663.65, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 3679.29, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2755.492, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 3704.542, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2917.068, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 877.6688995361328, 'used': 245.27721405029297}, 'gpu': 'Tesla V100-PCIE-32GB', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla V100-PCIE-32GB', 'memory_total': 34359738368}], 'memory': {'total': 377.5300483703613}}
+2025-03-19 15:56:34,144 INFO    HandlerThread:1384873 [system_monitor.py:probe():182] Finished collecting system info
+2025-03-19 15:56:34,144 INFO    HandlerThread:1384873 [system_monitor.py:probe():185] Publishing system info
+2025-03-19 15:56:34,144 DEBUG   HandlerThread:1384873 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2025-03-19 15:56:34,151 DEBUG   HandlerThread:1384873 [system_info.py:_save_pip():67] Saving pip packages done
+2025-03-19 15:56:34,152 DEBUG   HandlerThread:1384873 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2025-03-19 15:56:35,015 INFO    Thread-13 :1384873 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/wandb-summary.json
+2025-03-19 15:56:35,016 INFO    Thread-13 :1384873 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/conda-environment.yaml
+2025-03-19 15:56:35,016 INFO    Thread-13 :1384873 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/requirements.txt
+2025-03-19 15:56:40,675 DEBUG   HandlerThread:1384873 [system_info.py:_save_conda():86] Saving conda packages done
+2025-03-19 15:56:40,701 INFO    HandlerThread:1384873 [system_monitor.py:probe():187] Finished publishing system info
+2025-03-19 15:56:40,737 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 15:56:40,737 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-19 15:56:40,737 DEBUG   SenderThread:1384873 [sender.py:send():336] send: files
+2025-03-19 15:56:40,737 INFO    SenderThread:1384873 [sender.py:_save_file():1321] saving file wandb-metadata.json with policy now
+2025-03-19 15:56:40,747 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-19 15:56:40,747 DEBUG   SenderThread:1384873 [sender.py:send_request():363] send_request: stop_status
+2025-03-19 15:56:41,027 INFO    Thread-13 :1384873 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/conda-environment.yaml
+2025-03-19 15:56:41,027 INFO    Thread-13 :1384873 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/wandb-metadata.json
+2025-03-19 15:56:41,112 DEBUG   SenderThread:1384873 [sender.py:send():336] send: telemetry
+2025-03-19 15:56:41,494 INFO    wandb-upload_0:1384873 [upload_job.py:push():138] Uploaded file /tmp/tmpzw90vy9zwandb/c8yliih9-wandb-metadata.json
+2025-03-19 15:56:42,028 INFO    Thread-13 :1384873 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/output.log
+2025-03-19 15:56:44,032 INFO    Thread-13 :1384873 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/output.log
+2025-03-19 15:56:44,556 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 15:56:46,034 INFO    Thread-13 :1384873 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/output.log
+2025-03-19 15:56:47,011 DEBUG   SenderThread:1384873 [sender.py:send():336] send: exit
+2025-03-19 15:56:47,011 INFO    SenderThread:1384873 [sender.py:send_exit():559] handling exit code: 1
+2025-03-19 15:56:47,011 INFO    SenderThread:1384873 [sender.py:send_exit():561] handling runtime: 12
+2025-03-19 15:56:47,014 INFO    SenderThread:1384873 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2025-03-19 15:56:47,014 INFO    SenderThread:1384873 [sender.py:send_exit():567] send defer
+2025-03-19 15:56:47,015 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: defer
+2025-03-19 15:56:47,015 INFO    HandlerThread:1384873 [handler.py:handle_request_defer():170] handle defer: 0
+2025-03-19 15:56:47,015 DEBUG   SenderThread:1384873 [sender.py:send_request():363] send_request: defer
+2025-03-19 15:56:47,015 INFO    SenderThread:1384873 [sender.py:send_request_defer():583] handle sender defer: 0
+2025-03-19 15:56:47,015 INFO    SenderThread:1384873 [sender.py:transition_state():587] send defer: 1
+2025-03-19 15:56:47,015 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: defer
+2025-03-19 15:56:47,015 INFO    HandlerThread:1384873 [handler.py:handle_request_defer():170] handle defer: 1
+2025-03-19 15:56:47,015 DEBUG   SenderThread:1384873 [sender.py:send_request():363] send_request: defer
+2025-03-19 15:56:47,015 INFO    SenderThread:1384873 [sender.py:send_request_defer():583] handle sender defer: 1
+2025-03-19 15:56:47,015 INFO    SenderThread:1384873 [sender.py:transition_state():587] send defer: 2
+2025-03-19 15:56:47,016 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: defer
+2025-03-19 15:56:47,016 INFO    HandlerThread:1384873 [handler.py:handle_request_defer():170] handle defer: 2
+2025-03-19 15:56:47,016 INFO    HandlerThread:1384873 [system_monitor.py:finish():161] Stopping system monitor
+2025-03-19 15:56:47,016 DEBUG   SystemMonitor:1384873 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2025-03-19 15:56:47,016 INFO    HandlerThread:1384873 [interfaces.py:finish():175] Joined cpu
+2025-03-19 15:56:47,017 INFO    HandlerThread:1384873 [interfaces.py:finish():175] Joined disk
+2025-03-19 15:56:47,017 DEBUG   SystemMonitor:1384873 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2025-03-19 15:56:47,017 DEBUG   SystemMonitor:1384873 [system_monitor.py:_start():141] Publishing last batch of metrics
+2025-03-19 15:56:47,035 INFO    Thread-13 :1384873 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/wandb-summary.json
+2025-03-19 15:56:47,072 INFO    HandlerThread:1384873 [interfaces.py:finish():175] Joined gpu
+2025-03-19 15:56:47,072 INFO    HandlerThread:1384873 [interfaces.py:finish():175] Joined memory
+2025-03-19 15:56:47,072 INFO    HandlerThread:1384873 [interfaces.py:finish():175] Joined network
+2025-03-19 15:56:47,072 DEBUG   SenderThread:1384873 [sender.py:send_request():363] send_request: defer
+2025-03-19 15:56:47,072 INFO    SenderThread:1384873 [sender.py:send_request_defer():583] handle sender defer: 2
+2025-03-19 15:56:47,072 INFO    SenderThread:1384873 [sender.py:transition_state():587] send defer: 3
+2025-03-19 15:56:47,072 DEBUG   SenderThread:1384873 [sender.py:send():336] send: stats
+2025-03-19 15:56:47,073 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: defer
+2025-03-19 15:56:47,073 INFO    HandlerThread:1384873 [handler.py:handle_request_defer():170] handle defer: 3
+2025-03-19 15:56:47,073 DEBUG   SenderThread:1384873 [sender.py:send_request():363] send_request: defer
+2025-03-19 15:56:47,073 INFO    SenderThread:1384873 [sender.py:send_request_defer():583] handle sender defer: 3
+2025-03-19 15:56:47,073 INFO    SenderThread:1384873 [sender.py:transition_state():587] send defer: 4
+2025-03-19 15:56:47,073 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: defer
+2025-03-19 15:56:47,073 INFO    HandlerThread:1384873 [handler.py:handle_request_defer():170] handle defer: 4
+2025-03-19 15:56:47,073 DEBUG   SenderThread:1384873 [sender.py:send_request():363] send_request: defer
+2025-03-19 15:56:47,073 INFO    SenderThread:1384873 [sender.py:send_request_defer():583] handle sender defer: 4
+2025-03-19 15:56:47,073 INFO    SenderThread:1384873 [sender.py:transition_state():587] send defer: 5
+2025-03-19 15:56:47,073 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: defer
+2025-03-19 15:56:47,073 INFO    HandlerThread:1384873 [handler.py:handle_request_defer():170] handle defer: 5
+2025-03-19 15:56:47,073 DEBUG   SenderThread:1384873 [sender.py:send():336] send: summary
+2025-03-19 15:56:47,077 INFO    SenderThread:1384873 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2025-03-19 15:56:47,077 DEBUG   SenderThread:1384873 [sender.py:send_request():363] send_request: defer
+2025-03-19 15:56:47,077 INFO    SenderThread:1384873 [sender.py:send_request_defer():583] handle sender defer: 5
+2025-03-19 15:56:47,077 INFO    SenderThread:1384873 [sender.py:transition_state():587] send defer: 6
+2025-03-19 15:56:47,077 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: defer
+2025-03-19 15:56:47,077 INFO    HandlerThread:1384873 [handler.py:handle_request_defer():170] handle defer: 6
+2025-03-19 15:56:47,078 DEBUG   SenderThread:1384873 [sender.py:send_request():363] send_request: defer
+2025-03-19 15:56:47,078 INFO    SenderThread:1384873 [sender.py:send_request_defer():583] handle sender defer: 6
+2025-03-19 15:56:47,081 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: status_report
+2025-03-19 15:56:47,392 INFO    SenderThread:1384873 [sender.py:transition_state():587] send defer: 7
+2025-03-19 15:56:47,392 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: defer
+2025-03-19 15:56:47,392 INFO    HandlerThread:1384873 [handler.py:handle_request_defer():170] handle defer: 7
+2025-03-19 15:56:47,392 DEBUG   SenderThread:1384873 [sender.py:send_request():363] send_request: defer
+2025-03-19 15:56:47,392 INFO    SenderThread:1384873 [sender.py:send_request_defer():583] handle sender defer: 7
+2025-03-19 15:56:48,011 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: poll_exit
+2025-03-19 15:56:48,037 INFO    Thread-13 :1384873 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/wandb-summary.json
+2025-03-19 15:56:48,038 INFO    Thread-13 :1384873 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/config.yaml
+2025-03-19 15:56:48,038 INFO    Thread-13 :1384873 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/output.log
+2025-03-19 15:56:51,145 INFO    SenderThread:1384873 [sender.py:transition_state():587] send defer: 8
+2025-03-19 15:56:51,145 DEBUG   SenderThread:1384873 [sender.py:send_request():363] send_request: poll_exit
+2025-03-19 15:56:51,146 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: defer
+2025-03-19 15:56:51,146 INFO    HandlerThread:1384873 [handler.py:handle_request_defer():170] handle defer: 8
+2025-03-19 15:56:51,146 DEBUG   SenderThread:1384873 [sender.py:send_request():363] send_request: defer
+2025-03-19 15:56:51,146 INFO    SenderThread:1384873 [sender.py:send_request_defer():583] handle sender defer: 8
+2025-03-19 15:56:51,192 INFO    SenderThread:1384873 [sender.py:transition_state():587] send defer: 9
+2025-03-19 15:56:51,192 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: defer
+2025-03-19 15:56:51,192 INFO    HandlerThread:1384873 [handler.py:handle_request_defer():170] handle defer: 9
+2025-03-19 15:56:51,192 DEBUG   SenderThread:1384873 [sender.py:send():336] send: artifact
+2025-03-19 15:56:52,041 INFO    Thread-13 :1384873 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/output.log
+2025-03-19 15:56:52,489 INFO    SenderThread:1384873 [sender.py:send_artifact():1417] sent artifact job-https___github.com_millerdefoe_PPoDD.git_main.py - {'id': 'QXJ0aWZhY3Q6MTU4Mjc3MDg2NA==', 'digest': '4f7ec17df35dec34e6f6e9ce8a9b327d', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-https___github.com_millerdefoe_PPoDD.git_main.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-https___github.com_millerdefoe_PPoDD.git_main.py', 'alias': 'v0'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU4ODgyOTM0OA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTU4Mjc3MDg2NA==', 'versionIndex': 0}}, 'version': 'v0'}
+2025-03-19 15:56:52,490 DEBUG   SenderThread:1384873 [sender.py:send_request():363] send_request: defer
+2025-03-19 15:56:52,490 INFO    SenderThread:1384873 [sender.py:send_request_defer():583] handle sender defer: 9
+2025-03-19 15:56:52,490 INFO    SenderThread:1384873 [dir_watcher.py:finish():362] shutting down directory watcher
+2025-03-19 15:56:53,013 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-19 15:56:53,042 INFO    SenderThread:1384873 [dir_watcher.py:finish():392] scan: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files
+2025-03-19 15:56:53,042 INFO    SenderThread:1384873 [dir_watcher.py:finish():406] scan save: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/conda-environment.yaml conda-environment.yaml
+2025-03-19 15:56:53,043 INFO    SenderThread:1384873 [dir_watcher.py:finish():406] scan save: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/config.yaml config.yaml
+2025-03-19 15:56:53,045 INFO    SenderThread:1384873 [dir_watcher.py:finish():406] scan save: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/output.log output.log
+2025-03-19 15:56:53,047 INFO    SenderThread:1384873 [dir_watcher.py:finish():406] scan save: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/requirements.txt requirements.txt
+2025-03-19 15:56:53,050 INFO    SenderThread:1384873 [dir_watcher.py:finish():406] scan save: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/wandb-metadata.json wandb-metadata.json
+2025-03-19 15:56:53,050 INFO    SenderThread:1384873 [dir_watcher.py:finish():406] scan save: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/wandb-summary.json wandb-summary.json
+2025-03-19 15:56:53,053 INFO    SenderThread:1384873 [sender.py:transition_state():587] send defer: 10
+2025-03-19 15:56:53,054 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: defer
+2025-03-19 15:56:53,060 INFO    HandlerThread:1384873 [handler.py:handle_request_defer():170] handle defer: 10
+2025-03-19 15:56:53,060 DEBUG   SenderThread:1384873 [sender.py:send_request():363] send_request: defer
+2025-03-19 15:56:53,060 INFO    SenderThread:1384873 [sender.py:send_request_defer():583] handle sender defer: 10
+2025-03-19 15:56:53,060 INFO    SenderThread:1384873 [file_pusher.py:finish():162] shutting down file pusher
+2025-03-19 15:56:53,626 INFO    wandb-upload_1:1384873 [upload_job.py:push():138] Uploaded file /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/config.yaml
+2025-03-19 15:56:53,746 INFO    wandb-upload_0:1384873 [upload_job.py:push():138] Uploaded file /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/conda-environment.yaml
+2025-03-19 15:56:53,834 INFO    wandb-upload_2:1384873 [upload_job.py:push():138] Uploaded file /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/output.log
+2025-03-19 15:56:54,002 INFO    wandb-upload_3:1384873 [upload_job.py:push():138] Uploaded file /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/requirements.txt
+2025-03-19 15:56:54,708 INFO    wandb-upload_4:1384873 [upload_job.py:push():138] Uploaded file /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/files/wandb-summary.json
+2025-03-19 15:56:54,909 INFO    Thread-12 :1384873 [sender.py:transition_state():587] send defer: 11
+2025-03-19 15:56:54,909 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: defer
+2025-03-19 15:56:54,909 INFO    HandlerThread:1384873 [handler.py:handle_request_defer():170] handle defer: 11
+2025-03-19 15:56:54,909 DEBUG   SenderThread:1384873 [sender.py:send_request():363] send_request: defer
+2025-03-19 15:56:54,909 INFO    SenderThread:1384873 [sender.py:send_request_defer():583] handle sender defer: 11
+2025-03-19 15:56:54,909 INFO    SenderThread:1384873 [file_pusher.py:join():167] waiting for file pusher
+2025-03-19 15:56:54,909 INFO    SenderThread:1384873 [sender.py:transition_state():587] send defer: 12
+2025-03-19 15:56:54,909 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: defer
+2025-03-19 15:56:54,909 INFO    HandlerThread:1384873 [handler.py:handle_request_defer():170] handle defer: 12
+2025-03-19 15:56:54,909 DEBUG   SenderThread:1384873 [sender.py:send_request():363] send_request: defer
+2025-03-19 15:56:54,909 INFO    SenderThread:1384873 [sender.py:send_request_defer():583] handle sender defer: 12
+2025-03-19 15:56:55,122 INFO    SenderThread:1384873 [sender.py:transition_state():587] send defer: 13
+2025-03-19 15:56:55,122 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: defer
+2025-03-19 15:56:55,122 INFO    HandlerThread:1384873 [handler.py:handle_request_defer():170] handle defer: 13
+2025-03-19 15:56:55,122 DEBUG   SenderThread:1384873 [sender.py:send_request():363] send_request: defer
+2025-03-19 15:56:55,122 INFO    SenderThread:1384873 [sender.py:send_request_defer():583] handle sender defer: 13
+2025-03-19 15:56:55,123 INFO    SenderThread:1384873 [sender.py:transition_state():587] send defer: 14
+2025-03-19 15:56:55,123 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: defer
+2025-03-19 15:56:55,123 INFO    HandlerThread:1384873 [handler.py:handle_request_defer():170] handle defer: 14
+2025-03-19 15:56:55,123 DEBUG   SenderThread:1384873 [sender.py:send():336] send: final
+2025-03-19 15:56:55,123 DEBUG   SenderThread:1384873 [sender.py:send():336] send: footer
+2025-03-19 15:56:55,123 DEBUG   SenderThread:1384873 [sender.py:send_request():363] send_request: defer
+2025-03-19 15:56:55,123 INFO    SenderThread:1384873 [sender.py:send_request_defer():583] handle sender defer: 14
+2025-03-19 15:56:55,123 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: poll_exit
+2025-03-19 15:56:55,123 DEBUG   SenderThread:1384873 [sender.py:send_request():363] send_request: poll_exit
+2025-03-19 15:56:55,124 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: server_info
+2025-03-19 15:56:55,124 DEBUG   SenderThread:1384873 [sender.py:send_request():363] send_request: server_info
+2025-03-19 15:56:55,126 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: get_summary
+2025-03-19 15:56:55,126 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: sampled_history
+2025-03-19 15:56:55,363 INFO    MainThread:1384873 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2025-03-19 15:56:55,363 INFO    MainThread:1384873 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2025-03-19 15:56:55,364 INFO    MainThread:1384873 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2025-03-19 15:56:55,364 DEBUG   HandlerThread:1384873 [handler.py:handle_request():144] handle_request: shutdown
+2025-03-19 15:56:55,364 INFO    HandlerThread:1384873 [handler.py:finish():841] shutting down handler
+2025-03-19 15:56:56,124 INFO    WriterThread:1384873 [datastore.py:close():299] close: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250319_155633-eofqa7cg/run-eofqa7cg.wandb
+2025-03-19 15:56:56,363 INFO    SenderThread:1384873 [sender.py:finish():1493] shutting down sender
+2025-03-19 15:56:56,364 INFO    SenderThread:1384873 [file_pusher.py:finish():162] shutting down file pusher
+2025-03-19 15:56:56,364 INFO    SenderThread:1384873 [file_pusher.py:join():167] waiting for file pusher

@@ -1,0 +1,745 @@
+2025-03-20 19:34:34,609 INFO    StreamThr :134970 [internal.py:wandb_internal():87] W&B internal server running at pid: 134970, started at: 2025-03-20 19:34:34.607860
+2025-03-20 19:34:34,610 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status
+2025-03-20 19:34:34,612 INFO    WriterThread:134970 [datastore.py:open_for_write():85] open: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/run-4gis7d4u.wandb
+2025-03-20 19:34:34,615 DEBUG   SenderThread:134970 [sender.py:send():336] send: header
+2025-03-20 19:34:34,677 DEBUG   SenderThread:134970 [sender.py:send():336] send: run
+2025-03-20 19:34:35,333 INFO    SenderThread:134970 [dir_watcher.py:__init__():216] watching files in: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files
+2025-03-20 19:34:35,333 INFO    SenderThread:134970 [sender.py:_start_run_threads():1067] run started: 4gis7d4u with start time 1742470474.608387
+2025-03-20 19:34:35,333 DEBUG   SenderThread:134970 [sender.py:send_request():363] send_request: summary_record
+2025-03-20 19:34:35,335 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: check_version
+2025-03-20 19:34:35,337 INFO    SenderThread:134970 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2025-03-20 19:34:35,337 DEBUG   SenderThread:134970 [sender.py:send_request():363] send_request: check_version
+2025-03-20 19:34:35,387 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: run_start
+2025-03-20 19:34:35,396 DEBUG   HandlerThread:134970 [system_info.py:__init__():31] System info init
+2025-03-20 19:34:35,396 DEBUG   HandlerThread:134970 [system_info.py:__init__():46] System info init done
+2025-03-20 19:34:35,396 INFO    HandlerThread:134970 [system_monitor.py:start():151] Starting system monitor
+2025-03-20 19:34:35,396 INFO    SystemMonitor:134970 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2025-03-20 19:34:35,396 INFO    HandlerThread:134970 [system_monitor.py:probe():172] Collecting system info
+2025-03-20 19:34:35,397 INFO    SystemMonitor:134970 [interfaces.py:start():168] Started cpu
+2025-03-20 19:34:35,397 INFO    SystemMonitor:134970 [interfaces.py:start():168] Started disk
+2025-03-20 19:34:35,398 INFO    SystemMonitor:134970 [interfaces.py:start():168] Started gpu
+2025-03-20 19:34:35,400 INFO    SystemMonitor:134970 [interfaces.py:start():168] Started memory
+2025-03-20 19:34:35,400 INFO    SystemMonitor:134970 [interfaces.py:start():168] Started network
+2025-03-20 19:34:35,412 DEBUG   HandlerThread:134970 [system_info.py:probe():195] Probing system
+2025-03-20 19:34:35,419 DEBUG   HandlerThread:134970 [system_info.py:_probe_git():180] Probing git
+2025-03-20 19:34:35,439 DEBUG   HandlerThread:134970 [system_info.py:_probe_git():188] Probing git done
+2025-03-20 19:34:35,439 DEBUG   HandlerThread:134970 [system_info.py:probe():241] Probing system done
+2025-03-20 19:34:35,439 DEBUG   HandlerThread:134970 [system_monitor.py:probe():181] {'os': 'Linux-5.14.0-503.15.1.el9_5.x86_64-x86_64-with-glibc2.34', 'python': '3.9.16', 'heartbeatAt': '2025-03-20T11:34:35.412107', 'startedAt': '2025-03-20T11:34:34.557200', 'docker': None, 'cuda': None, 'args': ('--name=PoDD-CIFAR10-MultiStage', '--distill_batch_size=96', '--patch_num_x=16', '--patch_num_y=6', '--dataset=cifar10', '--num_train_eval=8', '--update_steps=1', '--batch_size=5000', '--ddtype=curriculum', '--cctype=2', '--epoch=150', '--test_freq=10', '--print_freq=10', '--arch=convnet', '--window=60', '--minwindow=0', '--totwindow=200', '--inner_optim=Adam', '--outer_optim=Adam', '--inner_lr=0.001', '--lr=0.001', '--syn_strategy=flip_rotate', '--real_strategy=flip_rotate', '--seed=0', '--zca', '--comp_ipc=1', '--class_area_width=32', '--class_area_height=32', '--poster_width=153', '--poster_height=60', '--poster_class_num_x=5', '--poster_class_num_y=2'), 'state': 'running', 'program': '/home/FYP/spyridon001/PoDD_Modified/main.py', 'codePath': 'main.py', 'git': {'remote': 'https://github.com/millerdefoe/PPoDD.git', 'commit': 'ce908b947a513c7b53258a65c513268ec34a8b6e'}, 'email': None, 'root': '/home/FYP/spyridon001/PoDD_Modified', 'host': 'TC1N04', 'username': 'spyridon001', 'executable': '/home/FYP/spyridon001/.conda/envs/podd_modified/bin/python', 'cpu_count': 36, 'cpu_count_logical': 72, 'cpu_freq': {'current': 2637.550541666667, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 3637.857, 'min': 0.0, 'max': 0.0}, {'current': 3637.802, 'min': 0.0, 'max': 0.0}, {'current': 3699.797, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 3602.358, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2266.842, 'min': 0.0, 'max': 0.0}, {'current': 1000.08, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 1000.066, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 1000.151, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 3700.019, 'min': 0.0, 'max': 0.0}, {'current': 3699.993, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 3146.134, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 3696.28, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2696.662, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}, {'current': 2600.0, 'min': 0.0, 'max': 0.0}], 'disk': {'total': 877.6688995361328, 'used': 26.552024841308594}, 'gpu': 'Tesla V100-PCIE-32GB', 'gpu_count': 1, 'gpu_devices': [{'name': 'Tesla V100-PCIE-32GB', 'memory_total': 34359738368}], 'memory': {'total': 377.53003692626953}}
+2025-03-20 19:34:35,439 INFO    HandlerThread:134970 [system_monitor.py:probe():182] Finished collecting system info
+2025-03-20 19:34:35,439 INFO    HandlerThread:134970 [system_monitor.py:probe():185] Publishing system info
+2025-03-20 19:34:35,439 DEBUG   HandlerThread:134970 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2025-03-20 19:34:35,443 DEBUG   HandlerThread:134970 [system_info.py:_save_pip():67] Saving pip packages done
+2025-03-20 19:34:35,444 DEBUG   HandlerThread:134970 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2025-03-20 19:34:36,336 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/conda-environment.yaml
+2025-03-20 19:34:36,336 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/requirements.txt
+2025-03-20 19:34:36,336 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/wandb-summary.json
+2025-03-20 19:34:37,977 DEBUG   HandlerThread:134970 [system_info.py:_save_conda():86] Saving conda packages done
+2025-03-20 19:34:37,981 INFO    HandlerThread:134970 [system_monitor.py:probe():187] Finished publishing system info
+2025-03-20 19:34:37,987 DEBUG   SenderThread:134970 [sender.py:send():336] send: files
+2025-03-20 19:34:37,988 INFO    SenderThread:134970 [sender.py:_save_file():1321] saving file wandb-metadata.json with policy now
+2025-03-20 19:34:37,995 DEBUG   SenderThread:134970 [sender.py:send():336] send: telemetry
+2025-03-20 19:34:37,995 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: stop_status
+2025-03-20 19:34:37,995 DEBUG   SenderThread:134970 [sender.py:send_request():363] send_request: stop_status
+2025-03-20 19:34:38,338 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/conda-environment.yaml
+2025-03-20 19:34:38,338 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:34:38,338 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/wandb-metadata.json
+2025-03-20 19:34:38,821 INFO    wandb-upload_0:134970 [upload_job.py:push():138] Uploaded file /tmp/tmpcbavz_r9wandb/lo0dg58j-wandb-metadata.json
+2025-03-20 19:34:40,317 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:34:40,346 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:34:44,351 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:34:46,209 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:34:50,359 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:34:52,203 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:34:52,994 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:34:54,364 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:34:57,587 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:34:58,003 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:34:58,376 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:35:02,380 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:35:02,717 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:35:03,005 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:35:06,391 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:35:08,006 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:35:08,472 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:35:09,394 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/config.yaml
+2025-03-20 19:35:10,397 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:35:13,007 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:35:13,808 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:35:16,405 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:35:18,094 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:35:19,198 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:35:20,410 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:35:23,627 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:35:24,415 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:35:24,781 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:35:28,628 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:35:29,908 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:35:30,423 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:35:33,629 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:35:34,427 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:35:35,059 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:35:35,400 DEBUG   SystemMonitor:134970 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2025-03-20 19:35:35,402 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:35:38,432 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:35:38,631 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:35:40,497 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:35:42,436 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:35:43,658 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:35:46,180 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:35:46,448 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:35:48,658 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:35:50,452 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:35:51,440 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:35:53,659 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:35:54,455 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:35:56,855 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:35:58,660 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:36:00,464 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:36:02,103 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:36:03,665 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:36:04,469 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:36:05,403 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:36:08,028 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:36:08,473 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:36:08,668 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:36:10,478 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:36:13,669 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:36:13,995 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:36:14,483 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:36:16,486 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:36:18,488 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:36:18,670 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:36:19,374 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:36:20,493 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:36:23,670 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:36:24,498 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:36:24,642 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:36:26,502 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:36:28,504 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:36:28,672 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:36:29,937 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:36:30,507 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:36:33,674 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:36:34,512 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:36:35,405 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:36:35,406 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:36:38,515 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:36:38,675 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:36:40,518 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:36:40,939 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:36:43,676 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:36:44,522 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:36:46,454 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:36:48,525 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:36:48,676 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:36:52,056 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:36:52,529 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:36:53,952 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:36:56,534 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:36:57,735 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:36:58,953 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:37:00,538 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:37:02,546 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:37:02,787 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:37:03,953 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:37:05,406 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:37:06,550 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:37:08,411 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:37:08,964 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:37:10,559 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:37:13,457 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:37:13,967 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:37:14,566 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:37:18,967 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:37:19,231 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:37:20,575 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:37:23,973 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:37:24,584 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:37:24,963 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:37:28,589 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:37:28,979 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:37:30,805 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:37:33,980 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:37:34,594 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:37:35,407 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:37:36,408 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:37:38,598 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:37:38,980 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:37:42,043 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:37:42,602 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:37:44,043 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:37:47,886 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:37:48,615 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:37:49,045 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:37:52,618 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:37:53,624 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:37:54,053 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:37:58,624 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:37:59,053 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:37:59,531 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:38:02,627 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:38:04,066 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:38:05,170 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:38:05,409 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:38:06,632 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:38:09,067 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:38:10,512 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:38:12,640 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:38:14,075 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:38:16,077 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:38:16,644 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:38:19,077 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:38:20,648 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:38:21,706 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:38:24,078 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:38:26,653 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:38:27,461 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:38:29,085 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:38:30,658 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:38:33,189 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:38:34,087 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:38:34,662 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:38:35,415 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:38:38,416 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:38:39,088 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:38:40,672 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:38:43,460 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:38:44,093 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:38:44,677 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:38:48,681 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:38:48,699 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:38:49,093 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:38:52,688 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:38:54,033 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:38:54,095 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:38:58,693 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:38:59,107 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:38:59,451 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:39:02,699 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:39:04,112 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:39:04,659 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:39:05,412 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:39:06,703 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:39:09,113 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:39:10,353 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:39:10,717 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:39:14,114 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:39:14,725 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:39:15,601 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:39:18,729 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:39:19,115 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:39:20,793 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:39:22,734 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:39:24,116 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:39:25,961 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:39:28,744 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:39:29,117 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:39:30,752 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:39:30,987 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:39:34,125 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:39:34,759 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:39:35,413 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:39:36,414 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:39:38,771 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:39:39,127 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:39:42,301 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:39:42,787 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:39:44,130 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:39:46,791 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:39:48,173 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:39:49,172 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:39:50,798 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:39:53,952 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:39:54,173 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:39:54,802 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:39:58,825 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:39:59,180 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:39:59,658 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:40:02,829 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:40:04,180 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:40:04,834 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:40:05,150 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:40:05,414 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:40:09,187 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:40:10,595 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:40:10,847 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:40:14,194 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:40:14,854 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:40:16,096 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:40:18,857 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:40:19,195 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:40:21,775 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:40:24,196 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:40:24,876 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:40:27,244 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:40:28,880 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:40:29,247 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:40:32,729 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:40:32,884 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:40:34,248 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:40:35,416 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:40:38,439 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:40:38,899 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:40:39,248 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:40:42,903 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:40:44,174 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:40:44,256 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:40:46,907 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:40:49,257 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:40:49,970 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:40:52,911 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:40:54,257 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:40:55,786 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:40:56,916 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:40:59,266 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:41:00,919 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:41:01,763 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:41:04,267 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:41:04,923 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:41:05,417 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:41:06,906 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:41:08,927 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:41:09,280 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:41:12,112 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:41:12,940 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:41:14,286 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:41:16,944 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:41:17,114 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:41:19,287 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:41:20,947 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:41:23,075 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:41:24,288 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:41:24,952 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:41:28,955 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:41:29,051 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:41:29,288 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:41:32,959 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:41:34,117 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:41:34,294 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:41:35,418 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:41:38,967 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:41:39,295 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:41:39,466 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:41:40,977 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:41:44,295 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:41:44,467 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:41:46,982 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:41:48,984 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:41:49,296 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:41:49,860 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:41:54,303 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:41:54,865 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:41:56,994 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:41:58,997 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:41:59,304 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:42:00,010 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:42:04,305 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:42:05,013 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:42:05,424 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:42:09,312 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:42:10,425 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:42:14,317 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:42:15,426 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:42:17,016 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:42:19,019 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:42:19,318 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:42:20,685 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:42:21,021 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:42:24,319 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:42:26,144 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:42:27,031 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:42:29,034 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:42:29,319 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:42:32,002 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:42:34,325 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:42:35,044 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:42:35,421 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:42:37,048 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:42:37,422 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:42:39,332 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:42:42,429 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:42:44,333 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:42:45,055 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:42:47,058 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:42:47,527 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:42:49,059 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:42:49,334 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:42:52,527 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:42:54,335 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:42:57,533 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:42:59,342 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:43:02,533 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:43:04,342 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:43:05,078 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:43:05,422 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:43:07,080 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:43:08,259 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:43:09,085 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:43:09,347 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:43:13,260 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:43:14,348 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:43:15,100 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:43:17,109 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:43:18,635 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:43:19,119 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:43:19,349 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:43:23,123 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:43:24,349 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:43:24,558 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:43:25,126 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:43:27,134 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:43:29,355 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:43:30,046 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:43:33,140 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:43:34,355 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:43:35,138 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:43:35,141 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:43:35,423 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:43:37,148 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:43:39,363 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:43:40,424 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:43:44,375 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:43:45,425 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:43:49,382 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:43:50,433 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:43:54,394 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:43:55,172 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:43:55,507 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:43:57,174 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:43:59,395 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:44:00,869 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:44:03,179 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:44:04,484 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:44:05,182 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:44:05,424 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:44:06,425 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:44:07,188 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:44:09,491 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:44:11,814 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:44:13,199 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:44:14,499 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:44:15,201 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:44:17,683 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:44:19,505 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:44:23,208 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:44:23,363 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:44:24,623 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:44:25,213 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:44:28,728 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:44:29,625 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:44:33,734 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:44:34,629 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:44:35,431 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:44:39,432 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:44:39,630 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:44:43,228 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:44:44,566 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:44:44,832 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:44:45,231 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:44:49,567 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:44:49,841 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:44:53,238 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:44:54,882 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:44:54,987 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:44:55,240 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:44:59,883 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:45:00,474 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:45:01,246 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:45:03,249 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:45:04,884 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:45:05,432 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:45:06,433 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:45:09,921 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:45:11,257 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:45:11,963 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:45:13,267 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:45:14,928 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:45:17,449 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:45:19,928 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:45:22,454 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:45:24,937 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:45:27,458 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:45:29,938 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:45:31,316 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:45:32,855 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:45:33,320 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:45:35,073 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:45:35,326 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:45:35,434 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:45:38,435 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:45:40,080 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:45:41,342 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:45:43,353 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:45:43,534 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:45:45,080 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:45:49,194 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:45:49,358 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:45:50,207 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:45:51,360 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:45:53,365 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:45:54,940 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:45:55,207 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:45:59,369 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:46:00,273 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:46:00,751 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:46:01,372 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:46:03,374 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:46:05,274 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:46:05,439 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:46:06,440 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:46:10,274 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:46:11,441 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:46:15,282 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:46:16,442 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:46:20,283 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:46:21,400 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:46:21,565 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:46:23,404 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:46:25,284 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:46:27,054 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:46:29,408 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:46:30,293 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:46:31,411 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:46:32,442 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:46:33,413 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:46:35,297 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:46:35,436 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:46:37,935 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:46:39,418 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:46:40,345 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:46:41,420 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:46:43,688 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:46:45,346 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:46:49,440 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:46:49,497 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:46:50,347 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:46:51,443 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:46:54,860 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:46:55,348 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:46:59,863 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:47:00,349 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:47:04,872 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:47:05,349 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:47:05,437 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:47:09,468 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:47:10,226 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:47:10,355 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:47:11,472 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:47:15,359 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:47:15,595 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:47:19,484 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:47:20,387 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:47:20,988 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:47:21,487 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:47:25,388 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:47:26,466 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:47:27,494 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:47:29,497 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:47:30,393 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:47:32,215 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:47:35,394 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:47:35,439 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:47:37,527 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:47:37,999 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:47:39,538 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:47:40,509 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:47:43,372 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:47:45,510 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:47:48,372 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:47:50,514 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:47:53,376 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:47:55,521 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:47:57,556 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:47:58,698 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:47:59,559 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:47:59,911 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: partial_history
+2025-03-20 19:47:59,912 DEBUG   SenderThread:134970 [sender.py:send():336] send: history
+2025-03-20 19:47:59,913 DEBUG   SenderThread:134970 [sender.py:send_request():363] send_request: summary_record
+2025-03-20 19:47:59,918 INFO    SenderThread:134970 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2025-03-20 19:48:00,559 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/wandb-summary.json
+2025-03-20 19:48:00,570 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:48:00,614 DEBUG   SenderThread:134970 [sender.py:send():336] send: files
+2025-03-20 19:48:00,614 INFO    SenderThread:134970 [sender.py:_save_file():1321] saving file media/images/inverse_zca_poster_1_50025fed189507926ffe.png with policy now
+2025-03-20 19:48:00,622 DEBUG   SenderThread:134970 [sender.py:send():336] send: files
+2025-03-20 19:48:00,622 INFO    SenderThread:134970 [sender.py:_save_file():1321] saving file media/images/distilled_poster_1_9e4990acc9a5b045d196.png with policy now
+2025-03-20 19:48:00,623 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: partial_history
+2025-03-20 19:48:00,623 DEBUG   SenderThread:134970 [sender.py:send():336] send: history
+2025-03-20 19:48:00,623 DEBUG   SenderThread:134970 [sender.py:send_request():363] send_request: summary_record
+2025-03-20 19:48:00,632 INFO    SenderThread:134970 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2025-03-20 19:48:01,248 INFO    wandb-upload_0:134970 [upload_job.py:push():138] Uploaded file /tmp/tmpcbavz_r9wandb/joabryh6-media/images/inverse_zca_poster_1_50025fed189507926ffe.png
+2025-03-20 19:48:01,566 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:48:01,566 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/wandb-summary.json
+2025-03-20 19:48:01,566 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/media/images/distilled_poster_1_9e4990acc9a5b045d196.png
+2025-03-20 19:48:01,566 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/media/images/inverse_zca_poster_1_50025fed189507926ffe.png
+2025-03-20 19:48:01,567 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/media
+2025-03-20 19:48:01,567 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_created():275] file/dir created: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/media/images
+2025-03-20 19:48:01,645 INFO    wandb-upload_1:134970 [upload_job.py:push():138] Uploaded file /tmp/tmpcbavz_r9wandb/8tzyfuhm-media/images/distilled_poster_1_9e4990acc9a5b045d196.png
+2025-03-20 19:48:02,412 INFO    wandb-upload_1:134970 [upload_job.py:push():138] Uploaded file /tmp/tmpcbavz_r9wandb/piishnns-media/images/distilled_poster_1_9e4990acc9a5b045d196.png
+2025-03-20 19:48:02,567 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/media/images
+2025-03-20 19:48:02,599 INFO    wandb-upload_0:134970 [upload_job.py:push():138] Uploaded file /tmp/tmpcbavz_r9wandb/4undzkq0-media/images/inverse_zca_poster_1_50025fed189507926ffe.png
+2025-03-20 19:48:03,759 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:48:05,440 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:48:05,571 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:48:05,572 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:48:09,197 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:48:09,578 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:48:10,614 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:48:11,581 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:48:15,144 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:48:15,592 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:48:15,617 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:48:19,603 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:48:20,590 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:48:20,618 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:48:21,627 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:48:25,619 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:48:25,669 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:48:26,491 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:48:29,699 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:48:30,659 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:48:32,270 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:48:33,740 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:48:35,441 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:48:35,660 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:48:35,752 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:48:37,444 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:48:39,760 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:48:40,666 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:48:43,094 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:48:45,670 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:48:45,782 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:48:48,590 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:48:49,796 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:48:50,676 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:48:54,224 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:48:55,678 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:48:55,808 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:48:59,826 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:49:00,055 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:49:00,679 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:49:03,836 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:49:05,445 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:49:05,446 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:49:05,683 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:49:09,847 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:49:10,525 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:49:10,684 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:49:13,853 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:49:15,685 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:49:15,879 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:49:17,875 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:49:20,686 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:49:21,348 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:49:23,888 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:49:25,686 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:49:25,890 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:49:27,306 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:49:29,898 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:49:30,687 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:49:31,901 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:49:32,327 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:49:35,451 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:49:35,691 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:49:35,906 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:49:37,909 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:49:38,108 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:49:39,912 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:49:40,699 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:49:43,939 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:49:43,982 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:49:45,705 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:49:45,950 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:49:49,110 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:49:49,960 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:49:50,706 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:49:51,964 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:49:54,123 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:49:55,710 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:49:55,969 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:49:59,614 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:49:59,986 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:50:00,718 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:50:04,001 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:50:05,382 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:50:05,448 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:50:05,724 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:50:08,008 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:50:10,812 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:50:10,813 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:50:12,015 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:50:15,814 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:50:16,021 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:50:16,478 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:50:18,027 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:50:20,828 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:50:21,828 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:50:22,037 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:50:25,828 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:50:26,042 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:50:27,478 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:50:30,046 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:50:30,829 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:50:32,057 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:50:33,175 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:50:35,449 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:50:35,830 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:50:36,070 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:50:38,075 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:50:38,985 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:50:40,882 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:50:42,082 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:50:44,086 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:50:44,153 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:50:45,883 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:50:48,095 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:50:49,324 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:50:50,887 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:50:52,100 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:50:54,103 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:50:54,486 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:50:55,887 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:50:58,108 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:51:00,112 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:51:00,381 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:51:00,888 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:51:02,117 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:51:05,450 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:51:05,451 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:51:05,889 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:51:06,130 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:51:08,144 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:51:10,891 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:51:11,388 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:51:12,153 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:51:14,157 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:51:15,929 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:51:16,158 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:51:17,043 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:51:20,169 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:51:20,930 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:51:22,172 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:51:22,515 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:51:24,187 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:51:25,931 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:51:28,192 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:51:28,218 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:51:30,933 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:51:32,203 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:51:34,053 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:51:34,205 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:51:35,452 DEBUG   SenderThread:134970 [sender.py:send():336] send: stats
+2025-03-20 19:51:35,950 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:51:38,223 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:51:39,435 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:51:40,951 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:51:42,233 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:51:44,555 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:51:45,953 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:51:46,238 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:51:48,241 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:51:50,259 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:51:50,953 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:51:52,251 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log
+2025-03-20 19:51:55,393 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: status_report
+2025-03-20 19:51:55,958 DEBUG   HandlerThread:134970 [handler.py:handle_request():144] handle_request: keepalive
+2025-03-20 19:51:56,258 INFO    Thread-13 :134970 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/FYP/spyridon001/PoDD_Modified/wandb/run-20250320_193434-4gis7d4u/files/output.log

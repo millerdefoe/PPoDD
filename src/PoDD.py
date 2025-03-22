@@ -43,47 +43,57 @@ class PoDD(nn.Module):
         self.criterion = nn.CrossEntropyLoss()
         self.lr = lr if not train_lr else torch.nn.Parameter(lr)
         self.net = get_arch(arch, self.num_classes, self.channel, self.im_size)
-        self.stage_proportions = np.array([0.4, 0.3, 0.2, 0.1, 0.0])  # Default for 5 stages
-        self.stage_proportions /= self.stage_proportions.sum()  # Normalize to sum to 1
+        self.stage_proportions = np.array([1, 0.0, 0.0, 0.0, 0.0])  # Default for 5 stages
         self.num_stages = num_stages
-        self.posters = [distilled_data.clone().detach() for _ in range(num_stages)]
-        self.labels = [y_init.clone().detach() for _ in range(num_stages)]
+        self.stored_posters = []  
+        self.stored_labels = []  
         self.current_stage = 0
 
 
     def get_overlapping_patches_and_labels(self):
         """
-        Fetch patches proportionally from different stages based on `self.stage_proportions`.
+        Fetch patches proportionally from completed stages only.
+        Ensures only the existing stored posters (up to self.current_stage) are sampled.
+        Uses dynamic probabilities for stage selection.
         """
-        num_stages = len(self.stage_proportions)
 
-        # 🔥 Choose stages according to `self.stage_proportions`
-        stage_indices = np.random.choice(num_stages, size=self.distill_batch_size, p=self.stage_proportions)
+        # ✅ Use only available stages up to `self.current_stage`
+        available_stages = min(self.current_stage + 1, self.num_stages)  # e.g., if stage=0, only 0 is available, if stage=1, use 0 & 1
+        
+        # ✅ Normalize selection probabilities from stored proportions
+        stage_probs = self.stage_proportions[:available_stages].copy()
+        stage_probs = stage_probs / stage_probs.sum()  # Ensure sum is 1
 
-        imgs_list = []
-        labels_list = []
+        # ✅ Sample which stage each patch should be drawn from
+        stage_indices = np.random.choice(available_stages, size=self.distill_batch_size, p=stage_probs)
 
-        for stage_idx in range(num_stages):
-            # 🔥 Select only indices belonging to the current stage
-            num_samples_from_stage = np.sum(stage_indices == stage_idx)  # Number of samples from this stage
+        imgs_list, labels_list = [], []
+        device = self.data.device
+
+        # ✅ Select from both the current poster and stored ones
+        all_posters = [self.data] + self.stored_posters[:self.current_stage]  
+        all_labels = [self.label] + self.stored_labels[:self.current_stage]
+
+        for stage_idx in range(available_stages):
+            num_samples_from_stage = np.sum(stage_indices == stage_idx)
 
             if num_samples_from_stage > 0:
-                perm = torch.randperm(self.samples_num, device='cpu')  # Shuffle dataset indices
-                selected_indices = perm[:num_samples_from_stage]  # Select indices for this stage
-                selected_indices = selected_indices.sort()[0]  # Ensure sorted order
+                perm = torch.randperm(self.samples_num, device=device)
+                selected_indices = perm[:num_samples_from_stage].sort()[0]
 
-                # 🔥 Fetch patches from the corresponding stage's poster
-                imgs_stage = self.get_crops(self.posters[stage_idx], selected_indices)
-                labels_stage = self.labels[stage_idx][selected_indices] if not self.train_y else self.get_labels(self.labels[stage_idx], selected_indices)
+                # ✅ Fetch patches and labels from the corresponding stored poster
+                imgs_stage = self.get_crops(all_posters[stage_idx], selected_indices).to(device)
+                labels_stage = all_labels[stage_idx].to(device)[selected_indices].to(device) if not self.train_y else self.get_labels(all_labels[stage_idx], selected_indices).to(device)
 
                 imgs_list.append(imgs_stage)
                 labels_list.append(labels_stage)
 
-        # 🔥 Combine selected patches across different stages
+        # ✅ Combine all selected patches from different stages
         imgs = torch.cat(imgs_list, dim=0)
         labels = torch.cat(labels_list, dim=0)
 
         return imgs, labels
+
 
     def forward(self, x):
         self.net = get_arch(self.arch, self.num_classes, self.channel, self.im_size).cuda()
@@ -108,10 +118,9 @@ class PoDD(nn.Module):
                 self.optimizer.zero_grad()
                 imgs, label = self.get_overlapping_patches_and_labels()
                 imgs = self.syn_intervention(imgs, dtype='syn')
-
                 out, pres = self.net(imgs)
-
                 loss = self.criterion(out, label)
+                
                 loss.backward()
                 self.optimizer.step()
                 if self.inner_optim == 'SGD' and self.scheduler is not None:
@@ -176,28 +185,57 @@ class PoDD(nn.Module):
             out = self.net(x)
         return out
 
-    def update_stage_proportions(self, stage_accuracies):
+    def update_stage_proportions(self, stage_accuracies, min_weight=0.1, new_stage_boost=1.5):
         """
         Dynamically updates stage proportions based on accuracy across all completed stages.
+        Ensures the newest poster has the highest probability initially.
+        
+        Args:
+            stage_accuracies (list): Accuracy values for each completed stage.
+            min_weight (float): Minimum probability for any stage.
+            new_stage_boost (float): Factor to boost the newest stage's probability.
         """
-        num_stages = self.current_stage + 1  # Only include completed stages
+        completed_stages = self.current_stage + 1  # Include only completed stages
 
-        if num_stages <= 1:
+        if completed_stages == 1:
+            print(f"No update needed if only 1 stage exists")
             return  # No update needed if only 1 stage exists
 
-        # 🔥 Use accuracy from ALL completed stages, not just the latest stage
-        acc_weights = np.array(stage_accuracies[:num_stages]) + 1e-5  # Avoid zero division
+        # 🛑 Assign initial accuracy to new stage
+        if len(stage_accuracies) < completed_stages:
+            prev_stage_acc = stage_accuracies[-1]  # Take last known accuracy
+            stage_accuracies.append(prev_stage_acc * 0.90)  # Assign 90% of previous stage accuracy
+
+        # 🔥 1. Compute accuracy-based weights
+        acc_weights = np.array(stage_accuracies[:completed_stages]) + 1e-5  # Avoid zero division
         acc_weights /= acc_weights.sum()  # Normalize to sum to 1
 
-        # 🔥 Apply a decay factor (older stages gradually become less important)
-        decay_factor = np.exp(-0.5 * np.arange(num_stages))  # Exponential decay
+        # 🔥 2. Apply a decay factor (older stages get lower weight)
+        decay_factor = np.exp(-0.5 * np.arange(completed_stages))  # Exponential decay
+        decay_factor = decay_factor[:completed_stages]  # Ensure correct shape
+
+        # 🔥 3. Apply the new stage boost
         dynamic_probs = acc_weights * decay_factor
+        dynamic_probs[-1] *= new_stage_boost  # Boost the newest stage
         dynamic_probs /= dynamic_probs.sum()  # Re-normalize to sum to 1
 
-        # 🔥 Update stage proportions based on performance across all stages
-        self.stage_proportions[:num_stages] = dynamic_probs  
+        # 🔥 4. Enforce a minimum probability for all stages
+        min_probs = np.full(completed_stages, min_weight / completed_stages)  # Minimum weight per stage
+        dynamic_probs = np.maximum(dynamic_probs, min_probs)  # Ensure each stage gets at least min_weight
+        dynamic_probs /= dynamic_probs.sum()  # Re-normalize to sum to 1
+
+        # 🔥 5. Update stage proportions
+        self.stage_proportions[:completed_stages] = dynamic_probs  
 
         print(f"Updated Stage Proportions: {self.stage_proportions}")
+
+
+    
+    def save_current_poster(self):
+        """ Store a snapshot of the current poster and label at this stage. """
+        self.stored_posters.append(self.data.clone().detach())
+        self.stored_labels.append(self.label.clone().detach())
+
 
 
 

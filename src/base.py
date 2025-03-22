@@ -207,12 +207,7 @@ def main_worker(args):
     for stage in range(num_stages):  
         print(f"Starting PoDD Stage {stage+1}/{num_stages}")
 
-        # Inherit the previous stage's poster
-        if stage > 0:  
-            model.module.data = model.module.posters[stage - 1].clone().detach()
-            model.module.label = model.module.labels[stage - 1].clone().detach()
-
-        for epoch in range(2):   #epochs_per_stage <- CHANGE BACK
+        for epoch in range(epochs_per_stage):   #epochs_per_stage <- CHANGE BACK
             if epoch == 0:
                 model.module.ema_init(args.clip_coef)
 
@@ -327,11 +322,11 @@ def main_worker(args):
         ######## AFTER PASTE ###########
         print("End of Stage. Saving Poster and Label")
         model.module.current_stage += 1  
-        model.module.posters[stage] = model.module.data.clone().detach()
-        model.module.labels[stage] = model.module.label.clone().detach()
-
+        model.module.save_current_poster()
+        print(f"Stored Posters at Stage {stage+1}: {len(model.module.stored_posters)} posters saved.")
         test_acc, _, _ = test([test_loader, train_loader1, train_loader2], model, criterion, args)  
         stage_accuracies.append(max(test_acc[0]))  # Save test accuracy for each stage
+        print(f"Stage {stage+1} - Current Stage Accuracies: {stage_accuracies}")
         model.module.update_stage_proportions(stage_accuracies)  # Updates probabilities
 
 

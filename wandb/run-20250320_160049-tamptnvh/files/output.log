@@ -1,0 +1,24 @@
+Starting PoDD Stage 1/5
+Check the length of the training dataset 50000
+GPU_0_using curriculum 98 with window 60
+  0%|          | 0/10 [00:04<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/FYP/spyridon001/PoDD_Modified/main.py", line 67, in <module>
+    main_worker(args)
+  File "/home/FYP/spyridon001/PoDD_Modified/src/base.py", line 218, in main_worker
+    grad_tmp, losses_avg, distill_steps = train(train_loader1, None, model, criterion,
+  File "/home/FYP/spyridon001/PoDD_Modified/src/base.py", line 372, in train
+    output, _ = model(inputs)
+  File "/home/FYP/spyridon001/.conda/envs/podd_modified/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/FYP/spyridon001/.conda/envs/podd_modified/lib/python3.9/site-packages/torch/nn/parallel/data_parallel.py", line 169, in forward
+    return self.module(*inputs[0], **kwargs[0])
+  File "/home/FYP/spyridon001/.conda/envs/podd_modified/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/home/FYP/spyridon001/PoDD_Modified/src/PoDD.py", line 142, in forward
+    diffopt.step(loss)
+  File "/home/FYP/spyridon001/.conda/envs/podd_modified/lib/python3.9/site-packages/higher/optim.py", line 229, in step
+    all_grads = _torch.autograd.grad(
+  File "/home/FYP/spyridon001/.conda/envs/podd_modified/lib/python3.9/site-packages/torch/autograd/__init__.py", line 300, in grad
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 48.00 MiB (GPU 0; 31.73 GiB total capacity; 14.66 GiB already allocated; 32.19 MiB free; 14.72 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

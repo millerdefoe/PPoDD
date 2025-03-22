@@ -1,0 +1,486 @@
+
+  0%|          | 0/10 [00:00<?, ?it/s]
+Starting PoDD Stage 1/5
+Check the length of the training dataset 50000
+GPU_0_using curriculum 98 with window 60
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 2.6103e-23, 5.7495e-19, 1.0000e+00], device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+Imgs Shape: torch.Size([96, 3, 32, 32]), Labels Shape: torch.Size([96, 10]), Device: cuda:0
+Label unique values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+  0%|          | 0/10 [00:05<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/FYP/spyridon001/PoDD_Modified/main.py", line 67, in <module>
+    main_worker(args)
+  File "/home/FYP/spyridon001/PoDD_Modified/src/base.py", line 223, in main_worker
+    grad_tmp, losses_avg, distill_steps = train(train_loader1, None, model, criterion,
+  File "/home/FYP/spyridon001/PoDD_Modified/src/base.py", line 392, in train
+    grad_norm = calculate_grad_norm(torch.norm(optimizer.param_groups[0]['params'][0].grad.clone().detach(), dim=1))
+AttributeError: 'NoneType' object has no attribute 'clone'

@@ -1,0 +1,796 @@
+
+  0%|          | 0/10 [00:00<?, ?it/s]
+Starting PoDD Stage 1/5
+Check the length of the training dataset 50000
+GPU_0_using curriculum 98 with window 60
+Iteration 0:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 2.353372573852539
+Iteration 1:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 2.5370094776153564
+Iteration 2:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 2.112111806869507
+Iteration 3:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 1.9364535808563232
+Iteration 4:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 1.8413138389587402
+Iteration 5:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 1.870373249053955
+Iteration 6:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 1.6156713962554932
+Iteration 7:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 1.5519556999206543
+Iteration 8:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 1.4007114171981812
+Iteration 9:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 1.277775764465332
+Iteration 10:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 1.330336093902588
+Iteration 11:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 1.271988034248352
+Iteration 12:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 1.167343258857727
+Iteration 13:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 1.030959963798523
+Iteration 14:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.9481058120727539
+Iteration 15:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.8280603289604187
+Iteration 16:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.7911972403526306
+Iteration 17:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.7367591857910156
+Iteration 18:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.6495660543441772
+Iteration 19:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.6413425207138062
+Iteration 20:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.5565539598464966
+Iteration 21:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.4486548602581024
+Iteration 22:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.38046297430992126
+Iteration 23:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.42608150839805603
+Iteration 24:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.3207246959209442
+Iteration 25:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.32578185200691223
+Iteration 26:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.2761801481246948
+Iteration 27:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.2359486222267151
+Iteration 28:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.20995426177978516
+Iteration 29:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.21132473647594452
+Iteration 30:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.14812543988227844
+Iteration 31:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.18855148553848267
+Iteration 32:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.14299926161766052
+Iteration 33:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.10396125167608261
+Iteration 34:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.11192977428436279
+Iteration 35:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.0829673632979393
+Iteration 36:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.105912946164608
+Iteration 37:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.06987131386995316
+Iteration 38:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 2.6103e-23, 5.7495e-19, 1.0000e+00], device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.05468682572245598
+Iteration 39:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.08229171484708786
+Iteration 40:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.0437031090259552
+Iteration 41:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.05457489937543869
+Iteration 42:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.05803326517343521
+Iteration 43:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.04657170921564102
+Iteration 44:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.04504944384098053
+Iteration 45:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.04197774827480316
+Iteration 46:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.031959742307662964
+Iteration 47:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.029577236622571945
+Iteration 48:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.03156997635960579
+Iteration 49:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.02767462655901909
+Iteration 50:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.027848944067955017
+Iteration 51:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.018746450543403625
+Iteration 52:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.013095740228891373
+Iteration 53:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.017253661528229713
+Iteration 54:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.021698787808418274
+Iteration 55:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.017264550551772118
+Iteration 56:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.019207242876291275
+Iteration 57:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.009271647781133652
+Iteration 58:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.01904895529150963
+Iteration 59:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.018498394638299942
+Iteration 60:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.010387031361460686
+Iteration 61:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.01017987634986639
+Iteration 62:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.007863787934184074
+Iteration 63:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.008355631493031979
+Iteration 64:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.012364448979496956
+Iteration 65:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.008018231950700283
+Iteration 66:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.007383893243968487
+Iteration 67:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.007330296561121941
+Iteration 68:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.0071282051503658295
+Iteration 69:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.012682011350989342
+Iteration 70:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.011076763272285461
+Iteration 71:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.01041293516755104
+Iteration 72:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.005963966250419617
+Iteration 73:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.011274192482233047
+Iteration 74:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.004165388643741608
+Iteration 75:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.010143297724425793
+Iteration 76:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.0051588318310678005
+Iteration 77:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.00919098686426878
+Iteration 78:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.004402552731335163
+Iteration 79:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.004498453810811043
+Iteration 80:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.004761491436511278
+Iteration 81:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.007883349433541298
+Iteration 82:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.003968670032918453
+Iteration 83:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.003691086545586586
+Iteration 84:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.0037426366470754147
+Iteration 85:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.008474946953356266
+Iteration 86:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.0035404544323682785
+Iteration 87:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.0039050146006047726
+Iteration 88:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.008218217641115189
+Iteration 89:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.0033054843079298735
+Iteration 90:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.0034827745985239744
+Iteration 91:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.007678364869207144
+Iteration 92:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.0032327105291187763
+Iteration 93:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.008332761004567146
+Iteration 94:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.0032711918465793133
+Iteration 95:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.0028529621195048094
+Iteration 96:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+ - Loss value: 0.002691911533474922
+Iteration 97:
+ - Images shape: torch.Size([96, 3, 32, 32])
+ - Labels shape: torch.Size([96, 10])
+ - Labels dtype: torch.float32
+ - Unique label values: tensor([0.0000e+00, 1.6038e-28, 2.6103e-23, 5.7495e-19, 1.0000e+00],
+       device='cuda:0')
+ - Output shape: torch.Size([96, 10])
+  0%|          | 0/10 [00:06<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/FYP/spyridon001/PoDD_Modified/main.py", line 67, in <module>
+    main_worker(args)
+  File "/home/FYP/spyridon001/PoDD_Modified/src/base.py", line 223, in main_worker
+    grad_tmp, losses_avg, distill_steps = train(train_loader1, None, model, criterion,
+  File "/home/FYP/spyridon001/PoDD_Modified/src/base.py", line 392, in train
+    grad_norm = calculate_grad_norm(torch.norm(optimizer.param_groups[0]['params'][0].grad.clone().detach(), dim=1))
+AttributeError: 'NoneType' object has no attribute 'clone'

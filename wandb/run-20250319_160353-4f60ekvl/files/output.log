@@ -1,0 +1,73 @@
+Starting PoDD Stage 1/5
+Check the length of the training dataset 50000
+GPU_0_using curriculum 98 with window 60
+
+
+
+
+ 40%|████      | 4/10 [00:22<00:28,  4.76s/it]
+
+
+
+
+
+100%|██████████| 10/10 [00:52<00:00,  5.21s/it]
+  0%|          | 0/10 [00:00<?, ?it/s]
+The current update step is 10
+Check the length of the training dataset 50000
+
+
+
+
+ 40%|████      | 4/10 [00:15<00:23,  3.89s/it]
+
+
+
+
+
+ 90%|█████████ | 9/10 [00:34<00:03,  3.85s/it]
+The current update step is 20
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:38<00:00,  3.86s/it]
+
+
+
+
+
+ 50%|█████     | 5/10 [00:11<00:11,  2.37s/it]
+
+
+
+
+100%|██████████| 10/10 [00:23<00:00,  2.36s/it]
+  0%|          | 0/10 [00:00<?, ?it/s]
+The current update step is 30
+Check the length of the training dataset 50000
+
+
+
+
+
+ 50%|█████     | 5/10 [00:15<00:15,  3.16s/it]
+
+
+
+
+ 90%|█████████ | 9/10 [00:28<00:03,  3.14s/it]
+The current update step is 40
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:31<00:00,  3.14s/it]
+
+
+
+
+ 40%|████      | 4/10 [00:16<00:25,  4.23s/it]
+
+
+
+
+
+ 90%|█████████ | 9/10 [00:37<00:04,  4.14s/it]
+The current update step is 50
+Check the length of the training dataset 50000
+100%|██████████| 10/10 [00:41<00:00,  4.19s/it]
