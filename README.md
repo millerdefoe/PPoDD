@@ -5,7 +5,7 @@ ___
 
 > **A Well Distilled Poster is Worth a Thousand Images**<br>
 > Spyridon Giakoumatos, Nema Arpita, Lin Weisi<br>
-> *<br>
+> <br>
 >
 >**Abstract:** Dataset distillation is a process that aims to create a small set of synthetic images that enables models trained on it to achieve
 performance comparable to training on the full
@@ -43,19 +43,17 @@ establishing a new paradigm for dataset distillation
 grounded in progressive knowledge accumulation.
 
 
+## Research Paper
 
+[**Download PDF**](./PPoDD_Final.pdf) 
+
+### Preview:
+![Paper Preview](./PPoDD_Preview.png)
+*Full PDF available via download link above*
 
 ## Installation 
-1.  Clone the repo:
-```bash
-git clone https://github.com/AsafShul/PoDD
-cd PoDD
-```
-2. Create a new environment with needed libraries from the `environment.yml` file, then activate it:
-```bash
-conda env create -f environment.yml
-conda activate podd
-```
+1.  Clone the repo
+2. Create a new environment with needed libraries from the `environment.yml` file, then activate it
 
 ## Dataset Preparation
 This implementation supports the following 4 datasets:
