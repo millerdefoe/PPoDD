@@ -1,4 +1,4 @@
-# Progressive Poster Dataset Distillation
+# About
 PyTorch Implementation for the "Progressive Poster Dataset Distillation" paper.  
 
 ___
